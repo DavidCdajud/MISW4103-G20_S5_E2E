@@ -1,0 +1,8 @@
+{
+  "name": "PruebasCypress",
+  "version": "1.0.0",
+  "devDependencies": {
+    "cypress": "*",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}
