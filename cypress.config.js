@@ -9,4 +9,8 @@ module.exports = defineConfig({
     videosFolder: 'cypress/videos',
     screenshotsFolder: 'cypress/screenshots'
   },
+  env:{
+    OldPass: "Test654321",
+    NewPass: "Test123456"
+  }
 })
