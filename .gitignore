@@ -42,6 +42,9 @@ build/Release
 node_modules/
 jspm_packages/
 screenshots/
+.DS_Store
+e2e/.DS_Store
+integrations/.DS_Store
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
