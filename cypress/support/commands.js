@@ -24,6 +24,8 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+require('cypress-xpath');
+
 Cypress.Commands.add('loginToGhost', () => {
     cy.visit('/ghost/#/signin');
 
