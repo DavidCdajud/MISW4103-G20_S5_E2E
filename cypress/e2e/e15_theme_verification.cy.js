@@ -2,6 +2,7 @@ describe('Theme toggle in Ghost Admin', () => {
     const dashboardUrl = '/ghost/#/dashboard';
     const themeToggleSelector = '.nightshift-toggle-container .nightshift-toggle';
     const themeActiveClass = 'on';
+    const caseFolder = 'caso15';
 
     before(() => {
         cy.loginToGhost();
@@ -9,18 +10,24 @@ describe('Theme toggle in Ghost Admin', () => {
 
     it('should switch between light and dark themes', () => {
         cy.visit(dashboardUrl);
-        const getThemeState = () => cy.get(themeToggleSelector).then(($toggle) => $toggle.hasClass(themeActiveClass) ? 'dark' : 'light');
+        cy.screenshot(`${caseFolder}/dashboard-initial`);
+
+        const getThemeState = () => {
+            return cy.get(themeToggleSelector).invoke('hasClass', themeActiveClass).then(isDark => isDark ? 'dark' : 'light');
+        };
+
         const toggleTheme = (expectedTheme) => {
-            getThemeState().then((currentTheme) => {
-                if (currentTheme !== expectedTheme) {
+            getThemeState().then((theme) => {
+                if ((theme === 'dark' && expectedTheme === 'light') || (theme === 'light' && expectedTheme === 'dark')) {
                     cy.get(themeToggleSelector).click();
+                    cy.screenshot(`${caseFolder}/dashboard-after-toggle-to-${expectedTheme}`);
                 }
             });
         };
 
         toggleTheme('dark');
-        cy.get(themeToggleSelector).should('have.class', themeActiveClass);
+        getThemeState().should('eq', 'dark');
         toggleTheme('light');
-        cy.get(themeToggleSelector).should('not.have.class', themeActiveClass);
+        getThemeState().should('eq', 'light');
     });
 });
