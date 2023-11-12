@@ -7,6 +7,7 @@ describe('Gestionar code injection', function() {
       writeText();
       cy.visit('http://localhost:2368/');
       validarHeaderFooter();
+      limpiarHeaderFooter();
   })
 })
 
@@ -27,10 +28,6 @@ function ingresarSettingsCodeInjection(){
 }
 
 function writeText(){
-  cy.get("#ghost-head").click().type('{selectAll}{del}');
-  cy.wait(2000);
-  cy.get("#ghost-foot").click().type('{selectAll}{del}');
-  cy.wait(2000);
   cy.get("#ghost-head").type("TestHeader");
   cy.get("#ghost-foot").type("TestFooter");
   cy.wait(2000);
@@ -43,5 +40,15 @@ function validarHeaderFooter(){
   cy.contains('body', 'TestFooter').should('be.visible');
   cy.wait(2000);
   cy.screenshot('/caso4/6validate.png');
-} 
+}
 
+function limpiarHeaderFooter(){
+  cy.visit('http://localhost:2368/ghost/');
+  cy.get('#ember24').click();
+  cy.contains('a', 'Code injection').click();
+  cy.get("#ghost-head").click().type('{selectAll}{del}');
+  cy.wait(2000);
+  cy.get("#ghost-foot").click().type('{selectAll}{del}');
+  cy.wait(2000);
+  cy.contains('span','Save').click();
+} 
