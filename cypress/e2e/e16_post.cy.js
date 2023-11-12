@@ -4,7 +4,6 @@ describe('Post', function () {
         cy.visit('http://localhost:2368/ghost/');
         inciarSesion();
         cy.wait(2000);
-        cy.screenshot('/caso16/Loging');
         navegarNewPost();
         cy.wait(2000);
         cy.screenshot('/caso16/Navegar');
