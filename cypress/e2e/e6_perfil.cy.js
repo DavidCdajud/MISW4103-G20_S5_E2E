@@ -31,48 +31,47 @@ function ingresarPerfil(){
 
 function editarPerfil(){
   cy.screenshot('/caso6/4datos.png');
-  cy.get('input.peer').eq(0).click();
-  cy.get('input.peer').eq(0).clear();
-  cy.get('input.peer').eq(0).type("Erik editado");
-  cy.get('input.peer').eq(2).click();
-  cy.get('input.peer').eq(2).clear();
-  cy.get('input.peer').eq(2).type("slugeditado");
-  cy.get('input.peer').eq(3).click();
-  cy.get('input.peer').eq(3).clear();
-  cy.get('input.peer').eq(3).type("colombia editado");
+  cy.get('#user-name').click();
+  cy.get('#user-name').clear();
+  cy.get('#user-name').type("Erik editado");
+  cy.get('#user-slug').click();
+  cy.get('#user-slug').clear();
+  cy.get('#user-slug').type("slugeditado");
+  cy.get('#user-location').click();
+  cy.get('#user-location').clear();
+  cy.get('#user-location').type("colombia editado");
   cy.screenshot('/caso6/5datosEditados.png');
   cy.wait(5000);
-  cy.contains('span', 'Save & close').click();
+  cy.contains('span', 'Save').click();
   cy.wait(2000);
+  cy.contains('a', 'Staff').click();
 }
 
 function validarEdicion(){
-  cy.contains('span', 'Erik editado').should('be.visible');
+  cy.contains('h3', 'Erik editado').should('be.visible');
   cy.screenshot('/caso6/6confirmarEdicion.png');
   cy.wait(2000);
 }
 
 function perfilAnterior(){
-  cy.contains('span', 'Erik editado').click();
+  cy.contains('h3', 'Erik editado').click();
   cy.wait(2000);
   cy.screenshot('/caso6/7datosNuevos.png');
-  cy.get('input.peer').eq(0).click();
-  cy.get('input.peer').eq(0).clear();
-  cy.get('input.peer').eq(0).type("Erik");
-  cy.get('input.peer').eq(2).click();
-  cy.get('input.peer').eq(2).clear();
-  cy.get('input.peer').eq(2).type("slug");
-  cy.get('input.peer').eq(3).click();
-  cy.get('input.peer').eq(3).clear();
-  cy.get('input.peer').eq(3).type("Colombia");
+  cy.get('#user-name').clear();
+  cy.get('#user-name').type("Erik");
+  cy.get('#user-slug').clear();
+  cy.get('#user-slug').type("slug");
+  cy.get('#user-location').clear();
+  cy.get('#user-location').type("Colombia");
   cy.screenshot('/caso6/8datosAnteriores.png');
   cy.wait(5000);
-  cy.contains('span', 'Save & close').click();
+  cy.contains('span', 'Save').click();
   cy.wait(2000);
+  cy.contains('a', 'Staff').click();
 }
 
 function validarAnterior(){
-  cy.contains('span', 'Erik').should('be.visible');
+  cy.contains('h3', 'Erik').should('be.visible');
   cy.screenshot('/caso6/9confirmarDatosAnteriores.png');
   cy.wait(2000);
 }
