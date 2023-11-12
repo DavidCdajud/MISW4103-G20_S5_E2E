@@ -9,9 +9,9 @@ describe('X Card', function () {
 })
 
 function inciarSesion() {
-    cy.get('#identification').type('d.caycedod@uniandes.edu.co');
+    cy.get('#identification').type('pruebas@correo.com');
     cy.wait(1000);
-    cy.get('#password').type('1032481969');
+    cy.get('#password').type('abcde12345');
     cy.wait(1000);
     cy.get('#ember5').click();
 

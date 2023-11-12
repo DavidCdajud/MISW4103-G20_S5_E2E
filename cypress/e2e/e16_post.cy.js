@@ -16,6 +16,7 @@ describe('Post', function () {
         prePublish();
         finalPusblish();
         cy.wait(2000);
+        cy.screenshot('/caso16/finalpublish');
         editorPost();
         openSettings();
         editSettingPost();
@@ -28,9 +29,9 @@ describe('Post', function () {
 })
 
 function inciarSesion() {
-    cy.get('#identification').type('d.caycedod@uniandes.edu.co');
+    cy.get('#identification').type('pruebas@correo.com');
     cy.wait(1000);
-    cy.get('#password').type('1032481969');
+    cy.get('#password').type('abcde12345');
     cy.wait(1000);
     cy.get('#ember5').click();
 
@@ -106,6 +107,7 @@ function deletePost() {
     cy.get('#custom-excerpt').click
     cy.get('.settings-menu-delete-button > .gh-btn > span').click();
     cy.wait(5000)
+    cy.screenshot('/caso16/delete');
     cy.get('[data-test-task-button-state="idle"]').contains('Delete').click();
 }
 
