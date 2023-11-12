@@ -4,9 +4,9 @@ describe('Gestionar contenido', function() {
       iniciarSesion(Cypress.env('OldPass'));
       cy.wait(2000);
       ingresarSettingsLabs();
-      //exportContent();
-      //deleteContent();
-      //validarDelete();
+      exportContent();
+      deleteContent();
+      validarDelete();
       importarContent();
   })
 })
