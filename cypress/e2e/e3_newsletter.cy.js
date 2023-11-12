@@ -1,5 +1,5 @@
-describe('Gestionar contenido', function() {
-  it('Exportar, eliminar e importar contenido de ghost', function() {
+describe('Gestionar email newsletter', function() {
+  it('Crear y editar email newsletter de ghost', function() {
       const uuid = Math.random() * 100;
       const uuid2 = Math.random() * 100;
       cy.visit('http://localhost:2368/ghost/');
