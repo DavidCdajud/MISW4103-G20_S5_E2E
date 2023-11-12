@@ -7,7 +7,9 @@ module.exports = defineConfig({
     baseUrl: 'http://localhost:2368',
     supportFile: 'cypress/support/commands.js',
     videosFolder: 'cypress/videos',
-    screenshotsFolder: 'cypress/screenshots'
+    screenshotsFolder: 'cypress/screenshots',
+    viewportWidth: 1280,
+    viewportHeight: 800
   },
   env:{
     OldPass: "Test654321",
