@@ -8,6 +8,7 @@ Pruebas automatizadas E2E
 
 ## Set up:
 npm install -g cypress
+
 cypress open
 
 ### Validar que el npm esté instalado con Node.js.
@@ -18,5 +19,7 @@ cypress open
 ## Set up Ghost
 
 Nombre ambiente: Pruebas automatizadas
-correo admin: prueba@correo.com
+
+correo admin: pruebas@correo.com
+
 contraseña: abcde12345
