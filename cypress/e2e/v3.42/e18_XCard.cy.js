@@ -1,7 +1,7 @@
 import 'cypress-file-upload';
 
 describe('X Card', function () {
-    it('Customize structured data of your site for X', function () {
+    it('Como dificata UTC', function () {
         cy.viewport(1900, 1500)
         cy.visit('http://localhost:3001/ghost/');
         inciarSesion();
@@ -11,33 +11,21 @@ describe('X Card', function () {
 })
 
 function inciarSesion() {
-    cy.get('#identification').type('pruebas@correo.com');
+    cy.get("#ember8").type('pruebas@correo.com');
     cy.wait(1000);
-    cy.get('#password').type('abcde12345');
+    cy.get("#ember10").type('abcde12345');
     cy.wait(1000);
-    cy.get('#ember5').click();
-
+    cy.get('#ember12 > span').click();
 }
 
 function settingsXCard() {
-    cy.visit(Cypress.e2e(baseUrl) + 3001);
-    cy.get('[data-test-nav="settings"]').click();
+    cy.contains("General").click();
     cy.wait(1000);
-    cy.get('div.flex.flex-col input[type="text"][placeholder="Search"]').click().type('X');
-    cy.wait(1000);
-    cy.get('[data-testid="twitter"]').contains('Edit').click();
-    cy.wait(1000);
-    cy.screenshot('/caso18/Pre-XCard');
-    cy.get('label[for="twitter-image"] input[type="file"]').attachFile('descarga.png');
-    cy.wait(1000);
-    cy.get('input[placeholder="Pruebas automatizadas"]').type('My first E2E Card');
-    cy.wait(1000);
-    cy.get('input[placeholder="Thoughts, stories and ideas."]').type('lorem ipsum dolor sit amet');
-    cy.wait(1000);
-    cy.screenshot('/caso18/Post-XCard');
-    cy.get('[data-testid="twitter"]').contains('Save').click();
+    cy.get(".gh-setting > .flex > .gh-setting-action > .gh-btn > span").click();
     cy.wait(2000);
-    cy.screenshot('/caso18/Saved-XCard');
+    cy.get("#twitterTitle").type("My first E2E tweet");
+    cy.get("#twitterDescription").type("This is my first body tweet using E2E");
+    cy.contains("Add Twitter image").attachFile('descarga.png');
 }
 
 
