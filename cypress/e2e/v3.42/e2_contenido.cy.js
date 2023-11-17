@@ -16,16 +16,16 @@ function iniciarSesion(){
   cy.wait(1000);
   cy.get("#ember10").type('abcde12345');
   cy.wait(1000);
-  cy.screenshot('/v3.42/caso2/1-inicioSesion.png');
+  cy.screenshot('/v3.42/caso2/1-inicioSesion');
   cy.get('#ember12 > span').click();
 }
 
 function ingresarLabs(){
   cy.wait(2000);
-  cy.screenshot('/v3.42/caso2/2-dashboard.png');
+  cy.screenshot('/v3.42/caso2/2-dashboard');
   cy.contains('a', 'Labs').click();
   cy.wait(2000);
-  cy.screenshot('/v3.42/caso2/3-labs.png');
+  cy.screenshot('/v3.42/caso2/3-labs');
 }
 
 function exportContent(){
@@ -35,19 +35,19 @@ function exportContent(){
 function deleteContent(){
   cy.contains('span', 'Delete').click();
   cy.wait(2000);
-  cy.screenshot('/v3.42/caso2/4-delete-modal.png');
+  cy.screenshot('/v3.42/caso2/4-delete-modal');
   cy.get('.modal-content').contains('span', 'Delete').click();
 } 
 
 function validarDelete(){
   cy.get('.gh-alert.gh-alert-green').should('be.visible');
-  cy.screenshot('/v3.42/caso2/5-delete-confirmation.png');
+  cy.screenshot('/v3.42/caso2/5-delete-confirmation');
 }
 
 function importarContent(){
   cy.get("input[name='importfile']").selectFile('cypress/fixtures/import_content.json');
   cy.wait(2000);
-  cy.screenshot('/v3.42/caso2/6-import-file1.png');
+  cy.screenshot('/v3.42/caso2/6-import-file1');
   cy.contains('span', 'Import').click();
   cy.wait(2000);
 
@@ -56,6 +56,6 @@ function importarContent(){
 function validarImportar(){
   cy.contains('span', 'Import successful').should('be.visible');
   cy.wait(2000);
-  cy.screenshot('/v3.42/caso2/7-import-successful.png');
+  cy.screenshot('/v3.42/caso2/7-import-successful');
 }
 
