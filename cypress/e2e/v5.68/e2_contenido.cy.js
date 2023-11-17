@@ -8,6 +8,7 @@ describe('Gestionar contenido', function() {
       deleteContent();
       validarDelete();
       importarContent();
+      validarImportar()
   })
 })
 
@@ -16,47 +17,46 @@ function iniciarSesion(pass){
   cy.wait(1000);
   cy.get('#password').type(pass);
   cy.wait(1000);
-  cy.screenshot('/caso2/2homepage.png');
+  cy.screenshot('/v5.68/caso2/1-inicioSesion');
   cy.get('#ember5').click();
 }
 
 function ingresarSettingsLabs(){
   cy.get('#ember34').click();
   cy.wait(1000);
-  cy.screenshot('/caso2/3setting.png');
+  cy.screenshot('/v5.68/caso2/2-settings');
   cy.contains('a', 'Labs').click();
   cy.wait(2000);
-  cy.screenshot('/caso2/4labs.png');
+  cy.screenshot('/v5.68/caso2/3-labs');
 }
 
 function exportContent(){
   cy.contains('span', 'Export').click();
   cy.wait(2000);
-  cy.screenshot('/caso2/5export.png');
 } 
 
 function deleteContent(){
   cy.contains('span', 'Delete').click();
   cy.wait(2000);
-  cy.screenshot('/caso2/6delete.png');
+  cy.screenshot('/v5.68/caso2/4-export-content');
   cy.get('.modal-content').contains('span', 'Delete').click();
   cy.wait(2000);
 } 
 
 function validarDelete(){
   cy.get('.gh-alert.gh-alert-green').should('be.visible');
-  cy.screenshot('/caso1/7successfuldelete.png');
+  cy.screenshot('/v5.68/caso2/5-delete-confirmation');
 }
 
 function importarContent(){
   cy.contains('a','Open Importer').click();
-  cy.screenshot('/caso1/8import.png');
+  cy.screenshot('/v5.68/caso2/6-delete-confirmation');
   cy.contains('label', 'Select or drop a JSON or zip file').selectFile('cypress/fixtures/import_content.json');
   cy.wait(1000);
-  cy.screenshot('/caso1/9cargaArchivo.png');
 }
 
 function validarImportar(){
   cy.contains('span', 'Got it').should('be.visible');
+  cy.screenshot('/v5.68/caso2/7-import-successful');
 }
 
