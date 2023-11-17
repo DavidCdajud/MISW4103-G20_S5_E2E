@@ -1,62 +1,61 @@
 describe('Gestionar contenido', function() {
   it('Exportar, eliminar e importar contenido de ghost', function() {
-      cy.visit('http://localhost:2368/ghost/');
-      iniciarSesion(Cypress.env('OldPass'));
-      cy.wait(2000);
-      ingresarSettingsLabs();
+      cy.visit('http://localhost:3001/ghost/');
+      iniciarSesion();
+      ingresarLabs();
       exportContent();
       deleteContent();
       validarDelete();
       importarContent();
+      validarImportar();
   })
 })
 
-function iniciarSesion(pass){
-  cy.get('#identification').type('pruebas@correo.com');
+function iniciarSesion(){
+  cy.get("#ember8").type('pruebas@correo.com');
   cy.wait(1000);
-  cy.get('#password').type(pass);
+  cy.get("#ember10").type('abcde12345');
   cy.wait(1000);
-  cy.screenshot('/caso2/2homepage.png');
-  cy.get('#ember5').click();
+  cy.screenshot('/v3.42/caso2/1-inicioSesion.png');
+  cy.get('#ember12 > span').click();
 }
 
-function ingresarSettingsLabs(){
-  cy.get('#ember34').click();
-  cy.wait(1000);
-  cy.screenshot('/caso2/3setting.png');
+function ingresarLabs(){
+  cy.wait(2000);
+  cy.screenshot('/v3.42/caso2/2-dashboard.png');
   cy.contains('a', 'Labs').click();
   cy.wait(2000);
-  cy.screenshot('/caso2/4labs.png');
+  cy.screenshot('/v3.42/caso2/3-labs.png');
 }
 
 function exportContent(){
   cy.contains('span', 'Export').click();
-  cy.wait(2000);
-  cy.screenshot('/caso2/5export.png');
 } 
 
 function deleteContent(){
   cy.contains('span', 'Delete').click();
   cy.wait(2000);
-  cy.screenshot('/caso2/6delete.png');
+  cy.screenshot('/v3.42/caso2/4-delete-modal.png');
   cy.get('.modal-content').contains('span', 'Delete').click();
-  cy.wait(2000);
 } 
 
 function validarDelete(){
   cy.get('.gh-alert.gh-alert-green').should('be.visible');
-  cy.screenshot('/caso1/7successfuldelete.png');
+  cy.screenshot('/v3.42/caso2/5-delete-confirmation.png');
 }
 
 function importarContent(){
-  cy.contains('a','Open Importer').click();
-  cy.screenshot('/caso1/8import.png');
-  cy.contains('label', 'Select or drop a JSON or zip file').selectFile('cypress/fixtures/import_content.json');
-  cy.wait(1000);
-  cy.screenshot('/caso1/9cargaArchivo.png');
+  cy.get("input[name='importfile']").selectFile('cypress/fixtures/import_content.json');
+  cy.wait(2000);
+  cy.screenshot('/v3.42/caso2/6-import-file1.png');
+  cy.contains('span', 'Import').click();
+  cy.wait(2000);
+
 }
 
 function validarImportar(){
-  cy.contains('span', 'Got it').should('be.visible');
+  cy.contains('span', 'Import successful').should('be.visible');
+  cy.wait(2000);
+  cy.screenshot('/v3.42/caso2/7-import-successful.png');
 }
 
