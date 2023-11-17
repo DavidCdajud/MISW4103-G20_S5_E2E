@@ -2,16 +2,18 @@ const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   e2e: {
-   // video: true,
+    // video: true,
     specPattern: "cypress/e2e/**/*.{cy,spec}.{js,ts}",
-    baseUrl: 'http://localhost:2368',
+    baseFolder342: '/v3.42/',
+    baseFolder568: '/v5.68/',
+    baseUrl: 'http://localhost:2368/',
     supportFile: 'cypress/support/commands.js',
     videosFolder: 'cypress/videos',
     screenshotsFolder: 'cypress/screenshots',
     viewportWidth: 1280,
     viewportHeight: 800
   },
-  env:{
+  env: {
     OldPass: "abcde12345",
     NewPass: "Test123456"
   }
