@@ -16,21 +16,21 @@ function iniciarSesion(pass){
   cy.wait(1000);
   cy.get('#password').type(pass);
   cy.wait(1000);
-  cy.screenshot('/caso5/2homepage.png');
+  cy.screenshot('/v5.68/caso5/1-inicioSesion');
   cy.get('#ember5').click();
 }
 
 function ingresarSettingsAnnouncement(){
   cy.get('#ember34').click();
   cy.wait(1000);
-  cy.screenshot('/caso5/3setting.png');
+  cy.screenshot('/v5.68/caso5/2-setting');
   cy.contains('a', 'Announcement bar').click();
 }
 
 function writeText(){
   cy.get("p[data-koenig-dnd-droppable='true']").type('TestAnnouncement');
   cy.wait(2000);
-  cy.screenshot('/caso5/4write.png');
+  cy.screenshot('/v5.68/caso5/3-write');
   cy.wait(2000);
   cy.contains('span','Save').click();
 } 
@@ -38,7 +38,7 @@ function writeText(){
 function validarAnnouncementBar(){
   cy.contains('span', 'TestAnnouncement').should('be.visible');
   cy.wait(2000);
-  cy.screenshot('/caso5/5validate.png');
+  cy.screenshot('/v5.68/caso5/4-validate');
 }
 
 function limpiarAnnouncementBar(){
@@ -50,4 +50,3 @@ function limpiarAnnouncementBar(){
   cy.wait(2000);
   cy.visit('http://localhost:2368/ghost/');
 }
-
