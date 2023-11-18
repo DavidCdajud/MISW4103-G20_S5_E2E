@@ -11,7 +11,7 @@ describe('Theme toggle in Ghost Admin', () => {
 
     it('should switch between light and dark themes', () => {
         cy.visit(dashboardUrl);
-        cy.screenshot(`${caseFolder}/01-dashboard-initial`);
+        cy.screenshot(`${caseFolder}/1-dashboard-initial`);
         const getThemeState = () => {
             return cy.get(themeToggleSelector).invoke('hasClass', themeActiveClass).then(isDark => isDark ? 'dark' : 'light');
         };
@@ -20,7 +20,7 @@ describe('Theme toggle in Ghost Admin', () => {
                 if ((theme === 'dark' && expectedTheme === 'light') || (theme === 'light' && expectedTheme === 'dark')) {
                     cy.get(themeToggleSelector).click();
                     cy.wait(500);
-                    cy.screenshot(`${caseFolder}/02-dashboard-after-toggle-to-${expectedTheme}`);
+                    cy.screenshot(`${caseFolder}/2-dashboard-after-toggle-to-${expectedTheme}`);
                 }
             });
         };

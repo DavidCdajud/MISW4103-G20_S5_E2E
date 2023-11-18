@@ -1,6 +1,6 @@
 describe('Page Creation and Publishing in Ghost', () => {
     const newPageButton = 'New page';
-    const pageTitle = 'Título de Nueva Página';
+    const pageTitle = 'New Title Page';
     const publishButton = 'Publish';
     const successMessage = 'Ready, set, publish. Share it with the world.';
     const versionFolder = Cypress.config('baseFolder568');
