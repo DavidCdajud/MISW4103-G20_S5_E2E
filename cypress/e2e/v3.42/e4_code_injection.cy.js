@@ -1,10 +1,10 @@
 describe('Gestionar code injection', function() {
   it('Agregar y verificar code injection de ghost', function() {
-      cy.visit('http://localhost:3001/ghost/');
+      cy.visit('http://localhost:2368/ghost');
       iniciarSesion();
       ingresarCodeInjection();
       writeText();
-      cy.visit('http://localhost:3001/');
+      cy.visit('http://localhost:2368/');
       validarHeaderFooter();
       limpiarHeaderFooter();
   })
@@ -43,7 +43,7 @@ function validarHeaderFooter(){
 }
 
 function limpiarHeaderFooter(){
-  cy.visit('http://localhost:3001/ghost/');
+  cy.visit('http://localhost:2368/ghost');
   cy.contains('a', 'Code injection').click();
   cy.get("#ghost-head").click().type('{selectAll}{del}');
   cy.wait(2000);

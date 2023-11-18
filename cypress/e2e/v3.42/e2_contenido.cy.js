@@ -1,6 +1,6 @@
 describe('Gestionar contenido', function() {
   it('Exportar, eliminar e importar contenido de ghost', function() {
-      cy.visit('http://localhost:3001/ghost/');
+      cy.visit('http://localhost:2368/ghost');
       iniciarSesion();
       ingresarLabs();
       exportContent();
