@@ -22,19 +22,19 @@ function inciarSesion() {
 function settingsXCard() {
     cy.get('[data-test-nav="settings"]').click();
     cy.wait(1000);
-    cy.get('div.flex.flex-col input[type="text"][placeholder="Search"]').click().type('X');
+    cy.contains('General').click();
     cy.wait(1000);
-    cy.get('[data-testid="twitter"]').contains('Edit').click();
+    cy.get('button.gh-btn[data-test-toggle-twitter]').click();
     cy.wait(1000);
     cy.screenshot('/v5.68/caso18/Pre-XCard');
-    cy.get('label[for="twitter-image"] input[type="file"]').attachFile('descarga.png');
+    cy.contains("Add Twitter image").attachFile('descarga.png');
     cy.wait(1000);
     cy.get('input[placeholder="Pruebas automatizadas"]').type('My first E2E Card');
     cy.wait(1000);
-    cy.get('input[placeholder="Thoughts, stories and ideas."]').type('lorem ipsum dolor sit amet');
+    cy.get("#twitterDescription").type('lorem ipsum dolor sit amet');
     cy.wait(1000);
     cy.screenshot('/v5.68/caso18/Post-XCard');
-    cy.get('[data-testid="twitter"]').contains('Save').click();
+    cy.contains("Save").click();
     cy.wait(2000);
     cy.screenshot('/v5.68/caso18/Saved XCard');
 }
