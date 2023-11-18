@@ -1,16 +1,14 @@
 const fs = require('fs');
 const resemble = require('resemblejs');
+const imagePaths = [
+    'screenshots/v3.42/caso2/1-inicioSesion.png',
+    'screenshots/v5.68/caso2/1-inicioSesion.png',
+    'screenshots/v3.42/caso2/2-dashboard.png',
+    'screenshots/v5.68/caso2/2-settings.png',
+    'screenshots/v3.42/caso2/3-labs.png',
+    'screenshots/v5.68/caso2/3-labs.png'
+];
 
-// Define las rutas de las imágenes que deseas comparar
-const image1Path = 'screenshots/v3.42/caso2/1-inicioSesion.png';
-const image2Path = 'screenshots/v5.68/caso2/1-inicioSesion.png';
-
-// Carga las imágenes
-const image1 = fs.readFileSync(image1Path);
-const image2 = fs.readFileSync(image2Path);
-
-// Compara las imágenes
-// Configuración de opciones para la comparación de imágenes
 const options = {
     output: {
         errorColor: {
@@ -28,76 +26,82 @@ const options = {
     ignore: 'antialiasing'
 };
 
-// Compara las imágenes
-resemble(image1).compareTo(image2).onComplete(function(data) {
-    console.log("Porcentaje de diferencia: " + data.rawMisMatchPercentage);
+let htmlReport = '';
 
-    // Puedes ajustar un umbral para determinar si las imágenes son lo suficientemente similares
-    const threshold = 5; // Puedes ajustar este valor según tus necesidades
+for (let i = 0; i < imagePaths.length; i += 2) {
+    const image1Path = imagePaths[i];
+    const image2Path = imagePaths[i + 1];
 
-    if (data.rawMisMatchPercentage > threshold) {
-        console.log("Las imágenes son diferentes.");
-    } else {
-        console.log("Las imágenes son similares.");
-    }
+    const image1 = fs.readFileSync(image1Path);
+    const image2 = fs.readFileSync(image2Path);
 
-    // Muestra información adicional
-    console.log("Dimensiones:");
-    console.log("Ancho de la imagen 1: " + data.dimension.width);
-    console.log("Alto de la imagen 1: " + data.dimension.height);
-    console.log("Ancho de la imagen 2: " + data.dimension.width);
-    console.log("Alto de la imagen 2: " + data.dimension.height);
-    
-    console.log("Porcentaje de diferencia (raw): " + data.rawMisMatchPercentage);
-    console.log("Porcentaje de diferencia: " + data.misMatchPercentage);
-    console.log("Diff bounds: " + JSON.stringify(data.diffBounds));
-    console.log("Tiempo de análisis: " + data.analysisTime + " ms");
+    resemble(image1).compareTo(image2).onComplete(function (data) {
 
-    // Guarda la imagen comparativa
-    fs.writeFileSync('compare.png', data.getBuffer());
-});
+        const threshold = 5;
 
-function browser(b, info){
-    console.log("b");
-    return `<div class="browser" id="test0">
-    <div class="btitle">
-        <h2>Browser: ${b}</h2>
-        <p>Data: ${JSON.stringify(info)}</p>
-    </div>
-    <div class="imgline">
-      <div class="imgcontainer">
-        <span class="imgname">Reference</span>
-        <img class="img2" src="before-${b}.png" id="refImage" label="Reference">
-      </div>
-      <div class="imgcontainer">
-        <span class="imgname">Test</span>
-        <img class="img2" src="after-${b}.png" id="testImage" label="Test">
-      </div>
-    </div>
-    <div class="imgline">
-      <div class="imgcontainer">
-        <span class="imgname">Diff</span>
-        <img class="imgfull" src="./compare-${b}.png" id="diffImage" label="Diff">
-      </div>
-    </div>
-  </div>`;
+        const section = `
+            <h2>Comparación de Imágenes ${i + 1} y ${i + 2}:</h2>
+            <p>Porcentaje de diferencia: ${data.rawMisMatchPercentage}</p>
+            ${data.rawMisMatchPercentage > threshold ? '<p>Las imágenes son diferentes.</p>' : '<p>Las imágenes son similares.</p>'}
+            
+            <h3>Imágenes Comparadas:</h3>
+            <div>
+                <img src="data:image/png;base64,${image1.toString('base64')}" alt="Imagen ${i + 1}">
+                <img src="data:image/png;base64,${image2.toString('base64')}" alt="Imagen ${i + 2}">
+            </div>
+
+            <h3>Información Adicional:</h3>
+            <ul>
+                <li>Dimensiones:</li>
+                <ul>
+                    <li>isSameDimensions: ${data.isSameDimensions}</li>
+                    <li>dimensionDifference: ${data.dimensionDifference}</li>
+                </ul>
+                <li>Porcentaje de diferencia (raw): ${data.rawMisMatchPercentage}</li>
+                <li>Porcentaje de diferencia: ${data.misMatchPercentage}</li>
+                <li>diffBounds: ${JSON.stringify(data.diffBounds)}</li>
+                <li>Tiempo de análisis: ${data.analysisTime} ms</li>
+            </ul>
+        `;
+
+        // Agrega la sección al informe HTML
+        htmlReport += section;
+
+        // Si hemos procesado todas las comparaciones, genera el informe final
+        if (i + 2 === imagePaths.length) {
+            generateFinalReport();
+        }
+    });
 }
 
-function createReport(datetime, resInfo){
-    return `
-    <html>
+function generateFinalReport() {
+    // Construye el informe HTML completo
+    const finalHtmlReport = `
+        <!DOCTYPE html>
+        <html lang="en">
         <head>
-            <title>VRT Report</title>
-            <link href="index.css" type="text/css" rel="stylesheet">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Informe de Comparación de Imágenes</title>
+            <style>
+                img {
+                    max-width: 300px;
+                    height: auto;
+                }
+            </style>
         </head>
         <body>
-            <h1>Report for 
-                 <a href="${config.url}">${config.url}</a>
-            </h1>
-            <p>Executed: ${datetime}</p>
-            <div id="visualizer">
-                ${Object.keys(resInfo).map(b => browser(b, resInfo[b])).join('')}
-            </div>
+            <h1>Informe de Comparación de Imágenes</h1>
+            ${htmlReport}
         </body>
-    </html>`;
+        </html>
+    `;
+
+    // Intenta escribir el informe HTML en un archivo
+    try {
+        fs.writeFileSync('./reporte_resemblejs/informe_resultados.html', finalHtmlReport);
+        console.log('Informe generado con éxito. Consulta el archivo "informe_comparacion.html".');
+    } catch (error) {
+        console.error('Error al escribir el archivo:', error.message);
+    }
 }
