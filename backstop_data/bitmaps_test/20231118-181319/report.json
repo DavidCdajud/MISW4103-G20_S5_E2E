@@ -1,0 +1,249 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Login_Page_Comparison_0_document_0_desktop_800x600.png",
+        "test": "../bitmaps_test/20231118-181319/backstop_default_Login_Page_Comparison_0_document_0_desktop_800x600.png",
+        "selector": "document",
+        "fileName": "backstop_default_Login_Page_Comparison_0_document_0_desktop_800x600.png",
+        "label": "Login Page Comparison",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.05,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso12/01-after-navigating-to-pages.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso12/1-after-navigating-to-pages.png",
+        "expect": 0,
+        "viewportLabel": "desktop_800x600",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 15.81125,
+          "misMatchPercentage": "15.81",
+          "analysisTime": 153
+        },
+        "diffImage": "../bitmaps_test/20231118-181319/failed_diff_backstop_default_Login_Page_Comparison_0_document_0_desktop_800x600.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_New_Page_Editor_Comparison_0_document_0_desktop_800x600.png",
+        "test": "../bitmaps_test/20231118-181319/backstop_default_New_Page_Editor_Comparison_0_document_0_desktop_800x600.png",
+        "selector": "document",
+        "fileName": "backstop_default_New_Page_Editor_Comparison_0_document_0_desktop_800x600.png",
+        "label": "New Page Editor Comparison",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.05,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso12/02-after-clicking-new-page.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso12/2.after-clicking-new-page.png",
+        "expect": 0,
+        "viewportLabel": "desktop_800x600",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 11.758125,
+          "misMatchPercentage": "11.76",
+          "analysisTime": 44
+        },
+        "diffImage": "../bitmaps_test/20231118-181319/failed_diff_backstop_default_New_Page_Editor_Comparison_0_document_0_desktop_800x600.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Page_Title_Input_Comparison_0_document_0_desktop_800x600.png",
+        "test": "../bitmaps_test/20231118-181319/backstop_default_Page_Title_Input_Comparison_0_document_0_desktop_800x600.png",
+        "selector": "document",
+        "fileName": "backstop_default_Page_Title_Input_Comparison_0_document_0_desktop_800x600.png",
+        "label": "Page Title Input Comparison",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.05,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso12/03-after-typing-title.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso12/3.after-typing-title.png",
+        "expect": 0,
+        "viewportLabel": "desktop_800x600",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 11.958333333333334,
+          "misMatchPercentage": "11.96",
+          "analysisTime": 91
+        },
+        "diffImage": "../bitmaps_test/20231118-181319/failed_diff_backstop_default_Page_Title_Input_Comparison_0_document_0_desktop_800x600.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Publish_Confirmation_Comparison_0_document_0_desktop_800x600.png",
+        "test": "../bitmaps_test/20231118-181319/backstop_default_Publish_Confirmation_Comparison_0_document_0_desktop_800x600.png",
+        "selector": "document",
+        "fileName": "backstop_default_Publish_Confirmation_Comparison_0_document_0_desktop_800x600.png",
+        "label": "Publish Confirmation Comparison",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.05,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso12/07-after-confirming-publish.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso12/4.after-clicking-publish.png",
+        "expect": 0,
+        "viewportLabel": "desktop_800x600",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 14.335833333333333,
+          "misMatchPercentage": "14.34",
+          "analysisTime": 94
+        },
+        "diffImage": "../bitmaps_test/20231118-181319/failed_diff_backstop_default_Publish_Confirmation_Comparison_0_document_0_desktop_800x600.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Tag_Creation_Interface_Comparison_0_document_0_desktop_800x600.png",
+        "test": "../bitmaps_test/20231118-181319/backstop_default_Tag_Creation_Interface_Comparison_0_document_0_desktop_800x600.png",
+        "selector": "document",
+        "fileName": "backstop_default_Tag_Creation_Interface_Comparison_0_document_0_desktop_800x600.png",
+        "label": "Tag Creation Interface Comparison",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.05,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso14/2-before-creating-tag.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso14/2.before-creating-tag.png",
+        "expect": 0,
+        "viewportLabel": "desktop_800x600",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 4.1450000000000005,
+          "misMatchPercentage": "4.15",
+          "analysisTime": 38
+        },
+        "diffImage": "../bitmaps_test/20231118-181319/failed_diff_backstop_default_Tag_Creation_Interface_Comparison_0_document_0_desktop_800x600.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Tag_Information_Input_Comparison_0_document_0_desktop_800x600.png",
+        "test": "../bitmaps_test/20231118-181319/backstop_default_Tag_Information_Input_Comparison_0_document_0_desktop_800x600.png",
+        "selector": "document",
+        "fileName": "backstop_default_Tag_Information_Input_Comparison_0_document_0_desktop_800x600.png",
+        "label": "Tag Information Input Comparison",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.05,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso14/3-after-entering-tag-info.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso14/3.after-entering-tag-info.png",
+        "expect": 0,
+        "viewportLabel": "desktop_800x600",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 7.079375000000001,
+          "misMatchPercentage": "7.08",
+          "analysisTime": 66
+        },
+        "diffImage": "../bitmaps_test/20231118-181319/failed_diff_backstop_default_Tag_Information_Input_Comparison_0_document_0_desktop_800x600.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Tag_Save_Confirmation_Comparison_0_document_0_desktop_800x600.png",
+        "test": "../bitmaps_test/20231118-181319/backstop_default_Tag_Save_Confirmation_Comparison_0_document_0_desktop_800x600.png",
+        "selector": "document",
+        "fileName": "backstop_default_Tag_Save_Confirmation_Comparison_0_document_0_desktop_800x600.png",
+        "label": "Tag Save Confirmation Comparison",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.05,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso14/4-after-saving-tag.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso14/4.after-saving-tag.png",
+        "expect": 0,
+        "viewportLabel": "desktop_800x600",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 7.09375,
+          "misMatchPercentage": "7.09",
+          "analysisTime": 96
+        },
+        "diffImage": "../bitmaps_test/20231118-181319/failed_diff_backstop_default_Tag_Save_Confirmation_Comparison_0_document_0_desktop_800x600.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Dark_Theme_Toggle_Verification_0_document_0_desktop_800x600.png",
+        "test": "../bitmaps_test/20231118-181319/backstop_default_Dark_Theme_Toggle_Verification_0_document_0_desktop_800x600.png",
+        "selector": "document",
+        "fileName": "backstop_default_Dark_Theme_Toggle_Verification_0_document_0_desktop_800x600.png",
+        "label": "Dark Theme Toggle Verification",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.05,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso15/2-dashboard-after-toggle-to-dark.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso15/2.after-first-toggle.png",
+        "expect": 0,
+        "viewportLabel": "desktop_800x600",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 39.622708333333335,
+          "misMatchPercentage": "39.62",
+          "analysisTime": 64
+        },
+        "diffImage": "../bitmaps_test/20231118-181319/failed_diff_backstop_default_Dark_Theme_Toggle_Verification_0_document_0_desktop_800x600.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Light_Theme_Toggle_Verification_0_document_0_desktop_800x600.png",
+        "test": "../bitmaps_test/20231118-181319/backstop_default_Light_Theme_Toggle_Verification_0_document_0_desktop_800x600.png",
+        "selector": "document",
+        "fileName": "backstop_default_Light_Theme_Toggle_Verification_0_document_0_desktop_800x600.png",
+        "label": "Light Theme Toggle Verification",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.05,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso15/2-dashboard-after-toggle-to-light.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso15/3.after-second-toggle.png",
+        "expect": 0,
+        "viewportLabel": "desktop_800x600",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 58.766041666666666,
+          "misMatchPercentage": "58.77",
+          "analysisTime": 89
+        },
+        "diffImage": "../bitmaps_test/20231118-181319/failed_diff_backstop_default_Light_Theme_Toggle_Verification_0_document_0_desktop_800x600.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "backstop_default"
+}

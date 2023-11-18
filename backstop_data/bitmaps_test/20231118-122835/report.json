@@ -1,0 +1,33 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Inicio_0_document_0_default.png",
+        "test": "../bitmaps_test/20231118-122835/backstop_default_Inicio_0_document_0_default.png",
+        "selector": "document",
+        "fileName": "backstop_default_Inicio_0_document_0_default.png",
+        "label": "Inicio",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso11/1-after-login.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso11/1-after-visiting-dashboard.png",
+        "expect": 0,
+        "viewportLabel": "default",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 4.721041666666666,
+          "misMatchPercentage": "4.72",
+          "analysisTime": 45
+        },
+        "diffImage": "../bitmaps_test/20231118-122835/failed_diff_backstop_default_Inicio_0_document_0_default.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "backstop_default"
+}
