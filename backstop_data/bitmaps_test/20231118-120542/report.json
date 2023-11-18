@@ -1,0 +1,30 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/comparaciondelogin_Imagen_Login_0_img_0_desktop.png",
+        "test": "../bitmaps_test/20231118-120542/comparaciondelogin_Imagen_Login_0_img_0_desktop.png",
+        "selector": "img",
+        "fileName": "comparaciondelogin_Imagen_Login_0_img_0_desktop.png",
+        "label": "Imagen Login",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress/screenshots/v5.68/caso11/1-after-visiting-dashboard.png",
+        "referenceUrl": "https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress/screenshots/v3.42/caso11/1-after-login.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    }
+  ],
+  "id": "comparacion de login"
+}
