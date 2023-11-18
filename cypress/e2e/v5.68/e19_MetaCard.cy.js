@@ -20,17 +20,17 @@ function inciarSesion() {
 function settingsMetaCard() {
     cy.get('[data-test-nav="settings"]').click();
     cy.wait(1000);
-    cy.get('div.flex.flex-col input[type="text"][placeholder="Search"]').click().type('meta');
+    cy.contains('General').click();
     cy.wait(1000);
-    cy.get('[data-testid="metadata"]').contains('Edit').click();
+    cy.get('button.gh-btn[data-test-toggle-meta]').click();
     cy.wait(1000);
-    cy.screenshot('/caso19/Pre-MetaCard');
+    cy.screenshot('/v5.68/caso19/Pre-MetaCard');
     cy.get('input[placeholder="Pruebas automatizadas"]').type('My first E2E Card');
     cy.wait(1000);
-    cy.get('input[placeholder="Thoughts, stories and ideas."]').type('lorem ipsum dolor sit amet');
+    cy.get('#metaDescription').type('lorem ipsum dolor sit amet');
     cy.wait(1000);
-    cy.screenshot('/caso19/Post-MetaCard');
-    cy.get('[data-testid="metadata"]').contains('Save').click();
+    cy.screenshot('/v5.68/caso19/Post-MetaCard');
+    cy.contains("Save").click();
     cy.wait(2000);
-    cy.screenshot('/caso19/Saved-MetaCard');
+    cy.screenshot('/v5.68/caso19/Saved-MetaCard');
 }

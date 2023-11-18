@@ -23,19 +23,19 @@ function inciarSesion() {
 function settingsFbCard() {
     cy.get('[data-test-nav="settings"]').click();
     cy.wait(1000);
-    cy.get('div.flex.flex-col input[type="text"][placeholder="Search"]').click().type('Facebook');
+    cy.contains('General').click();
     cy.wait(1000);
-    cy.get('[data-testid="facebook"]').contains('Edit').click();
+    cy.get('button.gh-btn[data-test-toggle-facebook]').click();
     cy.wait(1000);
     cy.screenshot('/caso20/Pre-FacebookCard');
-    cy.get('label[for="facebook-image"] input[type="file"]').attachFile('descarga.png');
+    cy.contains("Add Facebook image").attachFile('descarga.png');
     cy.wait(1000);
     cy.get('input[placeholder="Pruebas automatizadas"]').type('My first E2E Card');
     cy.wait(1000);
-    cy.get('input[placeholder="Thoughts, stories and ideas."]').type('lorem ipsum dolor sit amet');
+    cy.get('#ogDescription').type('lorem ipsum dolor sit amet');
     cy.wait(1000);
-    cy.screenshot('/caso20/Post-FacebookCard');
-    cy.get('[data-testid="facebook"]').contains('Save').click();
+    cy.screenshot('/v5.68/caso20/Post-FacebookCard');
+    cy.contains("Save").click();
     cy.wait(2000);
-    cy.screenshot('/caso20/Saved-FacebookCard');
+    cy.screenshot('/v5.68/caso20/Saved-FacebookCard');
 }

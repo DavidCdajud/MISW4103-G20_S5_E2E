@@ -21,16 +21,13 @@ function settingsTimeZone() {
   cy.screenshot('/v5.68/caso17/Settings TimeZone');
   cy.get('[data-test-nav="settings"]').click();
   cy.wait(1000);
-  cy.get('div.flex.flex-col input[type="text"][placeholder="Search"]').click().type('timeZone');
-  cy.wait(1000);
-  cy.get('[data-testid="timezone"]').contains('Edit').click();
+  cy.contains('General').click();
+  cy.get('button.gh-btn[data-test-toggle-timezone]').click();
   cy.wait(2000);
   cy.screenshot('/v5.68/caso17/Pre-TimeZone');
-  cy.get('.css-n9qnu9').type('Bogota').first();
-  cy.get('[data-testid="select-option"]').click();
+  cy.get('#timezone').select('(GMT -5:00) Bogota, Lima, Quito');
   cy.screenshot('/v5.68/caso17/Post-TimeZone');
-  cy.get('[data-testid="timezone"]').contains('Save').click();
-  cy.wait(2000);
+  cy.contains("Save").click();
   cy.screenshot('/v5.68/caso17/SavedSettings')
 }
 
