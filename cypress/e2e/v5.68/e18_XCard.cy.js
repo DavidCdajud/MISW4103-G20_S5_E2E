@@ -20,24 +20,23 @@ function inciarSesion() {
 }
 
 function settingsXCard() {
-    cy.visit('http://localhost:2368/ghost');
     cy.get('[data-test-nav="settings"]').click();
     cy.wait(1000);
     cy.get('div.flex.flex-col input[type="text"][placeholder="Search"]').click().type('X');
     cy.wait(1000);
     cy.get('[data-testid="twitter"]').contains('Edit').click();
     cy.wait(1000);
-    cy.screenshot('/caso18/Pre-XCard');
+    cy.screenshot('/v5.68/caso18/Pre-XCard');
     cy.get('label[for="twitter-image"] input[type="file"]').attachFile('descarga.png');
     cy.wait(1000);
     cy.get('input[placeholder="Pruebas automatizadas"]').type('My first E2E Card');
     cy.wait(1000);
     cy.get('input[placeholder="Thoughts, stories and ideas."]').type('lorem ipsum dolor sit amet');
     cy.wait(1000);
-    cy.screenshot('/caso18/Post-XCard');
+    cy.screenshot('/v5.68/caso18/Post-XCard');
     cy.get('[data-testid="twitter"]').contains('Save').click();
     cy.wait(2000);
-    cy.screenshot('/caso18/Saved-XCard');
+    cy.screenshot('/v5.68/caso18/Saved XCard');
 }
 
 

@@ -18,17 +18,19 @@ function inciarSesion() {
 }
 
 function settingsTimeZone() {
+  cy.screenshot('/v5.68/caso17/Settings TimeZone');
   cy.get('[data-test-nav="settings"]').click();
   cy.wait(1000);
   cy.get('div.flex.flex-col input[type="text"][placeholder="Search"]').click().type('timeZone');
   cy.wait(1000);
   cy.get('[data-testid="timezone"]').contains('Edit').click();
   cy.wait(2000);
-  cy.screenshot('/caso17/Pre-TimeZone');
+  cy.screenshot('/v5.68/caso17/Pre-TimeZone');
   cy.get('.css-n9qnu9').type('Bogota').first();
   cy.get('[data-testid="select-option"]').click();
+  cy.screenshot('/v5.68/caso17/Post-TimeZone');
   cy.get('[data-testid="timezone"]').contains('Save').click();
   cy.wait(2000);
-  cy.screenshot('/caso17/Post-TimeZone');
+  cy.screenshot('/v5.68/caso17/SavedSettings')
 }
 
