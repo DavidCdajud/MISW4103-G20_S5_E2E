@@ -1,6 +1,6 @@
 # MISW4103-G20_S5_E2E_CYPRESS
 
-## Video presentación
+### Video presentación
 
 [Video](https://uniandes-my.sharepoint.com/:v:/g/personal/d_caycedod_uniandes_edu_co/Edzy5jMAR9ZIqr0SfEPWh78BXHstLFql8uRMxQnqfk3N3A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&e=kIdga1)
 
@@ -12,16 +12,16 @@
 
 [Informe Backstop Js](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/backstop_data/html_report/index.html)
 
-## Incidencias:
+### Incidencias:
 
 [issues reportados](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/issues)
 
-## Wiki 
+### Wiki 
 
 [Wiki](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki)
 
 
-
+### Set up
 ## Prerrequisitos:
 
 Node.js: v18.18.1
@@ -30,7 +30,7 @@ Ghost v3.42
   
 Ghost v5.68
 
-## Set up:
+### CMD coding:
 
 docker run -d -e url=http://localhost:3001 -p 3001:2368 --name ghost_3.42 ghost:3.42
 
@@ -56,7 +56,7 @@ npm install cypress-xpath@2.0.1 --save-dev
 
 open the e2e test and run it
 
-## Set up Ghost
+### Set up Ghost
 
 Nombre ambiente: Pruebas automatizadas
 
