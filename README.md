@@ -21,8 +21,9 @@
 [Wiki](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki)
 
 
-### Set up
-## Prerrequisitos:
+## Set up
+
+### Prerrequisitos:
 
 Node.js: v18.18.1
   
