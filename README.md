@@ -1,4 +1,29 @@
 # MISW4103-G20_S5_E2E_CYPRESS
+
+##Video presentación
+
+[Video](https://uniandes-my.sharepoint.com/:v:/g/personal/d_caycedod_uniandes_edu_co/Edzy5jMAR9ZIqr0SfEPWh78BXHstLFql8uRMxQnqfk3N3A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&e=kIdga1)
+
+##Informes
+
+###Informe de resultados Resemble Js
+
+[Informe Resemble Js](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress/reporte_resemblejs/informe_resultados.html)
+
+###Informe de resultados Backstop Js
+
+[Informe Backstop Js](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/backstop_data/html_report/index.html)
+
+## Incidencias:
+
+[issues reportados](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/issues)
+
+## Wiki 
+
+[Wiki](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki)
+
+
+
 ## Prerrequisitos:
 
 Node.js: v18.18.1
@@ -41,7 +66,5 @@ correo admin: pruebas@correo.com
 
 contraseña: abcde12345
 
-## Incidencias:
 
-[issues reportados](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/issues)
 
