@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/backstop_default_Login_User_0_document_0_default.png",
-        "test": "../bitmaps_test/20231118-182855/backstop_default_Login_User_0_document_0_default.png",
+        "test": "../bitmaps_test/20231119-110907/backstop_default_Login_User_0_document_0_default.png",
         "selector": "document",
         "fileName": "backstop_default_Login_User_0_document_0_default.png",
         "label": "Login User",
@@ -22,16 +22,16 @@ report({
           },
           "rawMisMatchPercentage": 15.81125,
           "misMatchPercentage": "15.81",
-          "analysisTime": 191
+          "analysisTime": 86
         },
-        "diffImage": "../bitmaps_test/20231118-182855/failed_diff_backstop_default_Login_User_0_document_0_default.png"
+        "diffImage": "../bitmaps_test/20231119-110907/failed_diff_backstop_default_Login_User_0_document_0_default.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/backstop_default_New_Page_0_document_0_default.png",
-        "test": "../bitmaps_test/20231118-182855/backstop_default_New_Page_0_document_0_default.png",
+        "test": "../bitmaps_test/20231119-110907/backstop_default_New_Page_0_document_0_default.png",
         "selector": "document",
         "fileName": "backstop_default_New_Page_0_document_0_default.png",
         "label": "New Page",
@@ -49,16 +49,16 @@ report({
           },
           "rawMisMatchPercentage": 11.758125,
           "misMatchPercentage": "11.76",
-          "analysisTime": 100
+          "analysisTime": 182
         },
-        "diffImage": "../bitmaps_test/20231118-182855/failed_diff_backstop_default_New_Page_0_document_0_default.png"
+        "diffImage": "../bitmaps_test/20231119-110907/failed_diff_backstop_default_New_Page_0_document_0_default.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/backstop_default_Set_Title_0_document_0_default.png",
-        "test": "../bitmaps_test/20231118-182855/backstop_default_Set_Title_0_document_0_default.png",
+        "test": "../bitmaps_test/20231119-110907/backstop_default_Set_Title_0_document_0_default.png",
         "selector": "document",
         "fileName": "backstop_default_Set_Title_0_document_0_default.png",
         "label": "Set Title",
@@ -76,16 +76,16 @@ report({
           },
           "rawMisMatchPercentage": 11.958333333333334,
           "misMatchPercentage": "11.96",
-          "analysisTime": 39
+          "analysisTime": 104
         },
-        "diffImage": "../bitmaps_test/20231118-182855/failed_diff_backstop_default_Set_Title_0_document_0_default.png"
+        "diffImage": "../bitmaps_test/20231119-110907/failed_diff_backstop_default_Set_Title_0_document_0_default.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/backstop_default_Public_Page_0_document_0_default.png",
-        "test": "../bitmaps_test/20231118-182855/backstop_default_Public_Page_0_document_0_default.png",
+        "test": "../bitmaps_test/20231119-110907/backstop_default_Public_Page_0_document_0_default.png",
         "selector": "document",
         "fileName": "backstop_default_Public_Page_0_document_0_default.png",
         "label": "Public Page",
@@ -103,16 +103,16 @@ report({
           },
           "rawMisMatchPercentage": 14.335833333333333,
           "misMatchPercentage": "14.34",
-          "analysisTime": 68
+          "analysisTime": 41
         },
-        "diffImage": "../bitmaps_test/20231118-182855/failed_diff_backstop_default_Public_Page_0_document_0_default.png"
+        "diffImage": "../bitmaps_test/20231119-110907/failed_diff_backstop_default_Public_Page_0_document_0_default.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/backstop_default_New_Tag_0_document_0_default.png",
-        "test": "../bitmaps_test/20231118-182855/backstop_default_New_Tag_0_document_0_default.png",
+        "test": "../bitmaps_test/20231119-110907/backstop_default_New_Tag_0_document_0_default.png",
         "selector": "document",
         "fileName": "backstop_default_New_Tag_0_document_0_default.png",
         "label": "New Tag",
@@ -130,16 +130,16 @@ report({
           },
           "rawMisMatchPercentage": 4.1450000000000005,
           "misMatchPercentage": "4.15",
-          "analysisTime": 80
+          "analysisTime": 71
         },
-        "diffImage": "../bitmaps_test/20231118-182855/failed_diff_backstop_default_New_Tag_0_document_0_default.png"
+        "diffImage": "../bitmaps_test/20231119-110907/failed_diff_backstop_default_New_Tag_0_document_0_default.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/backstop_default_Feature_Tag_0_document_0_default.png",
-        "test": "../bitmaps_test/20231118-182855/backstop_default_Feature_Tag_0_document_0_default.png",
+        "test": "../bitmaps_test/20231119-110907/backstop_default_Feature_Tag_0_document_0_default.png",
         "selector": "document",
         "fileName": "backstop_default_Feature_Tag_0_document_0_default.png",
         "label": "Feature Tag",
@@ -157,16 +157,16 @@ report({
           },
           "rawMisMatchPercentage": 7.079375000000001,
           "misMatchPercentage": "7.08",
-          "analysisTime": 64
+          "analysisTime": 102
         },
-        "diffImage": "../bitmaps_test/20231118-182855/failed_diff_backstop_default_Feature_Tag_0_document_0_default.png"
+        "diffImage": "../bitmaps_test/20231119-110907/failed_diff_backstop_default_Feature_Tag_0_document_0_default.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/backstop_default_Saved_Tag_0_document_0_default.png",
-        "test": "../bitmaps_test/20231118-182855/backstop_default_Saved_Tag_0_document_0_default.png",
+        "test": "../bitmaps_test/20231119-110907/backstop_default_Saved_Tag_0_document_0_default.png",
         "selector": "document",
         "fileName": "backstop_default_Saved_Tag_0_document_0_default.png",
         "label": "Saved Tag",
@@ -184,16 +184,16 @@ report({
           },
           "rawMisMatchPercentage": 7.09375,
           "misMatchPercentage": "7.09",
-          "analysisTime": 158
+          "analysisTime": 118
         },
-        "diffImage": "../bitmaps_test/20231118-182855/failed_diff_backstop_default_Saved_Tag_0_document_0_default.png"
+        "diffImage": "../bitmaps_test/20231119-110907/failed_diff_backstop_default_Saved_Tag_0_document_0_default.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/backstop_default_Theme_Dark_Verification_0_document_0_default.png",
-        "test": "../bitmaps_test/20231118-182855/backstop_default_Theme_Dark_Verification_0_document_0_default.png",
+        "test": "../bitmaps_test/20231119-110907/backstop_default_Theme_Dark_Verification_0_document_0_default.png",
         "selector": "document",
         "fileName": "backstop_default_Theme_Dark_Verification_0_document_0_default.png",
         "label": "Theme Dark Verification",
@@ -211,16 +211,16 @@ report({
           },
           "rawMisMatchPercentage": 39.622708333333335,
           "misMatchPercentage": "39.62",
-          "analysisTime": 130
+          "analysisTime": 77
         },
-        "diffImage": "../bitmaps_test/20231118-182855/failed_diff_backstop_default_Theme_Dark_Verification_0_document_0_default.png"
+        "diffImage": "../bitmaps_test/20231119-110907/failed_diff_backstop_default_Theme_Dark_Verification_0_document_0_default.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/backstop_default_Theme_Light_Verification_0_document_0_default.png",
-        "test": "../bitmaps_test/20231118-182855/backstop_default_Theme_Light_Verification_0_document_0_default.png",
+        "test": "../bitmaps_test/20231119-110907/backstop_default_Theme_Light_Verification_0_document_0_default.png",
         "selector": "document",
         "fileName": "backstop_default_Theme_Light_Verification_0_document_0_default.png",
         "label": "Theme Light Verification",
@@ -238,9 +238,63 @@ report({
           },
           "rawMisMatchPercentage": 58.766041666666666,
           "misMatchPercentage": "58.77",
-          "analysisTime": 75
+          "analysisTime": 67
         },
-        "diffImage": "../bitmaps_test/20231118-182855/failed_diff_backstop_default_Theme_Light_Verification_0_document_0_default.png"
+        "diffImage": "../bitmaps_test/20231119-110907/failed_diff_backstop_default_Theme_Light_Verification_0_document_0_default.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Labs_0_document_0_default.png",
+        "test": "../bitmaps_test/20231119-110907/backstop_default_Labs_0_document_0_default.png",
+        "selector": "document",
+        "fileName": "backstop_default_Labs_0_document_0_default.png",
+        "label": "Labs",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress/screenshots/v5.68/caso2/3-labs.png?raw=true",
+        "referenceUrl": "https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress/screenshots/v3.42/caso2/3-labs.png?raw=true",
+        "expect": 0,
+        "viewportLabel": "default",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 8.441041666666667,
+          "misMatchPercentage": "8.44",
+          "analysisTime": 45
+        },
+        "diffImage": "../bitmaps_test/20231119-110907/failed_diff_backstop_default_Labs_0_document_0_default.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Code_injection_0_document_0_default.png",
+        "test": "../bitmaps_test/20231119-110907/backstop_default_Code_injection_0_document_0_default.png",
+        "selector": "document",
+        "fileName": "backstop_default_Code_injection_0_document_0_default.png",
+        "label": "Code injection",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress/screenshots/v5.68/caso4/3-write.png?raw=true",
+        "referenceUrl": "https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress/screenshots/v3.42/caso4/4-code-injection.png?raw=true",
+        "expect": 0,
+        "viewportLabel": "default",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 6.53375,
+          "misMatchPercentage": "6.53",
+          "analysisTime": 173
+        },
+        "diffImage": "../bitmaps_test/20231119-110907/failed_diff_backstop_default_Code_injection_0_document_0_default.png"
       },
       "status": "fail"
     }
