@@ -1,0 +1,249 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Login_User_0_document_0_default.png",
+        "test": "../bitmaps_test/20231118-193320/backstop_default_Login_User_0_document_0_default.png",
+        "selector": "document",
+        "fileName": "backstop_default_Login_User_0_document_0_default.png",
+        "label": "Login User",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso12/01-after-navigating-to-pages.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso12/1-after-navigating-to-pages.png",
+        "expect": 0,
+        "viewportLabel": "default",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 15.81125,
+          "misMatchPercentage": "15.81",
+          "analysisTime": 93
+        },
+        "diffImage": "../bitmaps_test/20231118-193320/failed_diff_backstop_default_Login_User_0_document_0_default.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_New_Page_0_document_0_default.png",
+        "test": "../bitmaps_test/20231118-193320/backstop_default_New_Page_0_document_0_default.png",
+        "selector": "document",
+        "fileName": "backstop_default_New_Page_0_document_0_default.png",
+        "label": "New Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso12/02-after-clicking-new-page.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso12/2.after-clicking-new-page.png",
+        "expect": 0,
+        "viewportLabel": "default",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 11.758125,
+          "misMatchPercentage": "11.76",
+          "analysisTime": 36
+        },
+        "diffImage": "../bitmaps_test/20231118-193320/failed_diff_backstop_default_New_Page_0_document_0_default.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Set_Title_0_document_0_default.png",
+        "test": "../bitmaps_test/20231118-193320/backstop_default_Set_Title_0_document_0_default.png",
+        "selector": "document",
+        "fileName": "backstop_default_Set_Title_0_document_0_default.png",
+        "label": "Set Title",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso12/03-after-typing-title.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso12/3.after-typing-title.png",
+        "expect": 0,
+        "viewportLabel": "default",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 11.958333333333334,
+          "misMatchPercentage": "11.96",
+          "analysisTime": 78
+        },
+        "diffImage": "../bitmaps_test/20231118-193320/failed_diff_backstop_default_Set_Title_0_document_0_default.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Public_Page_0_document_0_default.png",
+        "test": "../bitmaps_test/20231118-193320/backstop_default_Public_Page_0_document_0_default.png",
+        "selector": "document",
+        "fileName": "backstop_default_Public_Page_0_document_0_default.png",
+        "label": "Public Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso12/07-after-confirming-publish.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso12/4.after-clicking-publish.png",
+        "expect": 0,
+        "viewportLabel": "default",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 14.335833333333333,
+          "misMatchPercentage": "14.34",
+          "analysisTime": 45
+        },
+        "diffImage": "../bitmaps_test/20231118-193320/failed_diff_backstop_default_Public_Page_0_document_0_default.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_New_Tag_0_document_0_default.png",
+        "test": "../bitmaps_test/20231118-193320/backstop_default_New_Tag_0_document_0_default.png",
+        "selector": "document",
+        "fileName": "backstop_default_New_Tag_0_document_0_default.png",
+        "label": "New Tag",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso14/2-before-creating-tag.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso14/2.before-creating-tag.png",
+        "expect": 0,
+        "viewportLabel": "default",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 4.1450000000000005,
+          "misMatchPercentage": "4.15",
+          "analysisTime": 54
+        },
+        "diffImage": "../bitmaps_test/20231118-193320/failed_diff_backstop_default_New_Tag_0_document_0_default.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Feature_Tag_0_document_0_default.png",
+        "test": "../bitmaps_test/20231118-193320/backstop_default_Feature_Tag_0_document_0_default.png",
+        "selector": "document",
+        "fileName": "backstop_default_Feature_Tag_0_document_0_default.png",
+        "label": "Feature Tag",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso14/3-after-entering-tag-info.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso14/3.after-entering-tag-info.png",
+        "expect": 0,
+        "viewportLabel": "default",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 7.079375000000001,
+          "misMatchPercentage": "7.08",
+          "analysisTime": 53
+        },
+        "diffImage": "../bitmaps_test/20231118-193320/failed_diff_backstop_default_Feature_Tag_0_document_0_default.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Saved_Tag_0_document_0_default.png",
+        "test": "../bitmaps_test/20231118-193320/backstop_default_Saved_Tag_0_document_0_default.png",
+        "selector": "document",
+        "fileName": "backstop_default_Saved_Tag_0_document_0_default.png",
+        "label": "Saved Tag",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso14/4-after-saving-tag.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso14/4.after-saving-tag.png",
+        "expect": 0,
+        "viewportLabel": "default",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 7.09375,
+          "misMatchPercentage": "7.09",
+          "analysisTime": 62
+        },
+        "diffImage": "../bitmaps_test/20231118-193320/failed_diff_backstop_default_Saved_Tag_0_document_0_default.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Theme_Dark_Verification_0_document_0_default.png",
+        "test": "../bitmaps_test/20231118-193320/backstop_default_Theme_Dark_Verification_0_document_0_default.png",
+        "selector": "document",
+        "fileName": "backstop_default_Theme_Dark_Verification_0_document_0_default.png",
+        "label": "Theme Dark Verification",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso15/2-dashboard-after-toggle-to-dark.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso15/2.after-first-toggle.png",
+        "expect": 0,
+        "viewportLabel": "default",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 39.622708333333335,
+          "misMatchPercentage": "39.62",
+          "analysisTime": 51
+        },
+        "diffImage": "../bitmaps_test/20231118-193320/failed_diff_backstop_default_Theme_Dark_Verification_0_document_0_default.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Theme_Light_Verification_0_document_0_default.png",
+        "test": "../bitmaps_test/20231118-193320/backstop_default_Theme_Light_Verification_0_document_0_default.png",
+        "selector": "document",
+        "fileName": "backstop_default_Theme_Light_Verification_0_document_0_default.png",
+        "label": "Theme Light Verification",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v5.68/caso15/2-dashboard-after-toggle-to-light.png",
+        "referenceUrl": "https://raw.githubusercontent.com/DavidCdajud/MISW4103-G20_S5_E2E/develop/cypress/screenshots/v3.42/caso15/3.after-second-toggle.png",
+        "expect": 0,
+        "viewportLabel": "default",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 58.766041666666666,
+          "misMatchPercentage": "58.77",
+          "analysisTime": 66
+        },
+        "diffImage": "../bitmaps_test/20231118-193320/failed_diff_backstop_default_Theme_Light_Verification_0_document_0_default.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "backstop_default"
+}
