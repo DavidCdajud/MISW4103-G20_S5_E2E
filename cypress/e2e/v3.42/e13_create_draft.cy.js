@@ -1,4 +1,5 @@
 describe('Create a draft in Ghost', () => {
+    const baseUrl = 'http://localhost:3001';
     const postTitle = 'My New Ghost Post';
     const postContent = 'Contenido del borrador del post.';
     const publishButtonXpath = '//span[normalize-space()=\'Publish\']';
@@ -7,7 +8,7 @@ describe('Create a draft in Ghost', () => {
     const caseFolder = `${versionFolder}caso13`;
 
     beforeEach(() => {
-        cy.loginToGhost();
+        cy.loginToGhost(baseUrl);
     });
 
     it('should create a draft post with content', () => {

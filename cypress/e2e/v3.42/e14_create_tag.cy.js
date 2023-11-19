@@ -1,11 +1,12 @@
 describe('Create a tag in Ghost Admin', () => {
+    const baseUrl = 'http://localhost:3001';
     const tagName = 'New Tag Name';
     const tagDescription = 'A description for the new tag';
     const versionFolder = Cypress.config('baseFolder342');
     const caseFolder = `${versionFolder}caso14`;
 
     beforeEach(() => {
-        cy.loginToGhost();
+        cy.loginToGhost(baseUrl);
     });
 
     it('should create a new tag', () => {

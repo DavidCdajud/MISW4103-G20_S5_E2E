@@ -1,10 +1,11 @@
 describe('Dashboard General Review in Ghost', () => {
+    const baseUrl = 'http://localhost:3001';
     const dashboardUrl = '/ghost/#/site';
     const versionFolder = Cypress.config('baseFolder342');
     const caseFolder = `${versionFolder}caso11`;
 
     before(() => {
-        cy.loginToGhost();
+        cy.loginToGhost(baseUrl);
     });
 
     it('should display the site description correctly', () => {

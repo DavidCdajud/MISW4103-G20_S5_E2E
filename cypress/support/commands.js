@@ -26,11 +26,11 @@
 
 require('cypress-xpath');
 
-Cypress.Commands.add('loginToGhost', () => {
-    cy.visit('/ghost/#/signin');
-
+// En cypress/support/commands.js
+Cypress.Commands.add('loginToGhost', (baseUrl) => {
+    cy.visit(`${baseUrl}/ghost/#/signin`);
     cy.get('input[name="identification"]').type(Cypress.env('EMAIL'));
     cy.get('input[name="password"]').type(Cypress.env('PASSWORD'), { log: false });
-
     cy.get('button[type="submit"]').click();
 });
+

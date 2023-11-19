@@ -1,11 +1,12 @@
 describe('Page Creation and Publishing in Ghost', () => {
+    const baseUrl = 'http://localhost:3001';
     const pageTitle = 'New Title Page';
     const publishMenuButton = 'Publish';
     const versionFolder = Cypress.config('baseFolder342');
     const caseFolder = `${versionFolder}caso12`;
 
     before(() => {
-        cy.loginToGhost();
+        cy.loginToGhost(baseUrl);
     });
 
     it('should create a new page with a title', () => {
