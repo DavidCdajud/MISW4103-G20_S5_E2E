@@ -1,4 +1,5 @@
 describe('Theme toggle in Ghost Admin', () => {
+    const baseUrl = 'http://localhost:2368';
     const dashboardUrl = '/ghost/#/dashboard';
     const themeToggleSelector = '.nightshift-toggle-container .nightshift-toggle';
     const themeActiveClass = 'on';
@@ -6,7 +7,7 @@ describe('Theme toggle in Ghost Admin', () => {
     const caseFolder = `${versionFolder}caso15`;
 
     before(() => {
-        cy.loginToGhost();
+        cy.loginToGhost(baseUrl);
     });
 
     it('should switch between light and dark themes', () => {

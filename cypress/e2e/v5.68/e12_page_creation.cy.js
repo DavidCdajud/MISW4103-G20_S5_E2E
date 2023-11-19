@@ -1,15 +1,16 @@
 describe('Page Creation and Publishing in Ghost', () => {
+    const baseUrl = 'http://localhost:2368';
     const newPageButton = 'New page';
     const pageTitle = 'New Title Page';
     const publishButton = 'Publish';
-    const successMessageContainer = '.gh-publish-title'; // Asegúrate de que este es el selector correcto
+    const successMessageContainer = '.gh-publish-title';
     const continueButtonSelector = '[data-test-button="continue"]';
-    const confirmPublishButtonSelector = 'button[data-test-button="confirm-publish"]'; // Actualizado para usar atributo data-test-button
+    const confirmPublishButtonSelector = 'button[data-test-button="confirm-publish"]'; 
     const versionFolder = Cypress.config('baseFolder568');
     const caseFolder = `${versionFolder}caso12`;
 
     before(() => {
-        cy.loginToGhost();
+        cy.loginToGhost(baseUrl);
     });
 
     it('should create a new page with a title', () => {

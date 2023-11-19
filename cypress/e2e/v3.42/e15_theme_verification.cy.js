@@ -1,9 +1,10 @@
 describe('Night shift toggle in Ghost Admin', () => {
+    const baseUrl = 'http://localhost:3001';
     const versionFolder = Cypress.config('baseFolder342');
     const caseFolder = `${versionFolder}caso15`;
 
     before(() => {
-        cy.loginToGhost();
+        cy.loginToGhost(baseUrl);
     });
 
     it('debería alternar el modo Night shift y verificar el tema', () => {

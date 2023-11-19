@@ -1,4 +1,5 @@
 describe('Dashboard General Review in Ghost', () => {
+    const baseUrl = 'http://localhost:2368';
     const dashboardUrl = '/ghost/#/dashboard';
     const versionFolder = Cypress.config('baseFolder568');
     const totalMembersXpath = "//h5[normalize-space()='Total members']";
@@ -7,7 +8,7 @@ describe('Dashboard General Review in Ghost', () => {
     const caseFolder = `${versionFolder}caso11`;
 
     before(() => {
-        cy.loginToGhost();
+        cy.loginToGhost(baseUrl);
     });
 
     it('should display all the dashboard elements correctly', () => {

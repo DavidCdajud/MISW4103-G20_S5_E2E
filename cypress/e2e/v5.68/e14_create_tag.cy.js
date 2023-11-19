@@ -1,4 +1,5 @@
 describe('Create a tag in Ghost Admin', () => {
+    const baseUrl = 'http://localhost:2368';
     const tagName = 'New Tag Name';
     const tagDescription = 'A description for the new tag';
     const tagsUrl = '/ghost/#/tags';
@@ -6,7 +7,7 @@ describe('Create a tag in Ghost Admin', () => {
     const caseFolder = `${versionFolder}caso14`;
 
     beforeEach(() => {
-        cy.loginToGhost();
+        cy.loginToGhost(baseUrl);
     });
 
     it('should create a new tag', () => {
