@@ -43,7 +43,7 @@ mkdir ghost5.68
 
 cd ghost5.68
 
-ghost install local 5.68
+ghost install 5.68 --local
 
 ghost start
 
@@ -65,5 +65,26 @@ correo admin: pruebas@correo.com
 
 contraseña: abcde12345
 
+### CMD coding para v3.42 sin docker
 
+npm install
 
+npm install ghost-cli@latest
+
+mkdir ghost5.68
+
+cd ghost5.68
+
+ghost install 3.42 --local
+
+ghost start
+
+npm install -g cypress
+
+cypress open
+
+npm install cypress --save-dev
+
+npm install cypress-xpath@2.0.1 --save-dev
+
+open the e2e test and run it
