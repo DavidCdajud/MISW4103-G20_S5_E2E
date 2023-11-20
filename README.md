@@ -33,6 +33,7 @@ Ghost v5.68
 
 ### CMD coding:
 
+```
 docker run -d -e url=http://localhost:3001 -p 3001:2368 --name ghost_3.42 ghost:3.42
 
 npm install
@@ -54,19 +55,39 @@ cypress open
 npm install cypress --save-dev
 
 npm install cypress-xpath@2.0.1 --save-dev
+```
 
-open the e2e test and run it
+Open the e2e test and run it
+
 
 ### Set up Ghost
 
-Nombre ambiente: Pruebas automatizadas
+**Nombre ambiente:** Pruebas automatizadas
 
-correo admin: pruebas@correo.com
+**Correo admin:** pruebas@correo.com
 
-contraseña: abcde12345
+**Contraseña:** abcde12345
+
+### Instalación de Backstop.js
+```
+npm install -g backstopjs
+
+backstop init
+
+backstop test
+
+backstop approve
+
+backstop test
+```
+
+### Instalación de Resemble.js
+```
+...
+```
 
 ### CMD coding para v3.42 sin docker
-
+```
 npm install
 
 npm install ghost-cli@latest
@@ -86,5 +107,10 @@ cypress open
 npm install cypress --save-dev
 
 npm install cypress-xpath@2.0.1 --save-dev
+```
 
-open the e2e test and run it
+Open the e2e test and run it
+
+# Repositorio Kraken
+https://github.com/jhosalarcon/MISW4103-G20_S5_Kraken_E2E
+
