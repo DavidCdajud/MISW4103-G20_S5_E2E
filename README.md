@@ -82,8 +82,12 @@ backstop test
 ```
 
 ### Instalación de Resemble.js
+
 ```
-...
+npm install -g resemblejs
+
+node index.js
+
 ```
 
 ### CMD coding para v3.42 sin docker
