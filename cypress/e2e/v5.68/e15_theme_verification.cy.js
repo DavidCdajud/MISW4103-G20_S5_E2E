@@ -1,8 +1,6 @@
 describe('Theme toggle in Ghost Admin', () => {
     const baseUrl = 'http://localhost:2368';
     const dashboardUrl = '/ghost/#/dashboard';
-    const postsUrl = '/ghost/#/posts';
-    const settingsUrl = '/ghost/#/settings/general';
     const themeToggleSelector = '.nightshift-toggle-container .nightshift-toggle';
     const themeActiveClass = 'on';
     const versionFolder = Cypress.config('baseFolder568');

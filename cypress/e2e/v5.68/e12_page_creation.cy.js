@@ -16,9 +16,9 @@ describe('Page Creation and Publishing in Ghost', () => {
         cy.loginToGhost(baseUrl);
     });
 
-    it('debería contar las palabras en la descripción correctamente', () => {
-        const randomPageTitle = 'Test Page Title';
-        const pageDescription = 'This is a test description to count words.';
+    it('debería contar las palabras aleatoriamente en la descripción al crear una Page', () => {
+        const randomPageTitle = faker.commerce.productName();
+        const pageDescription = faker.lorem.sentence(50);
         const expectedWordCount = pageDescription.split(' ').length;
         cy.visit('/ghost/#/pages');
         cy.conditionalScreenshot(`${caseFolder}/101-after-navigating-to-pages`);
@@ -99,7 +99,7 @@ describe('Page Creation and Publishing in Ghost', () => {
          cy.conditionalScreenshot(`${caseFolder}/10-after-confirming-publish`);
      });
 
-    it('debería permitir la creación de una nueva page sin título pero con descripción', () => {
+    it('debería permitir la creación de una nueva Page sin título pero con descripción', () => {
         const randomPageDescription = faker.lorem.paragraph();
         cy.visit('/ghost/#/pages');
         cy.conditionalScreenshot(`${caseFolder}/03-after-navigating-to-pages`);
@@ -131,7 +131,7 @@ describe('Page Creation and Publishing in Ghost', () => {
         cy.conditionalScreenshot(`${caseFolder}/13-after-confirming-no-navigation-on-error`);
     });
 
-    it('should fail to create a new page with an extremely long title', () => {
+    it('debería fallar al crear una nueva Page con un título extremadamente largo', () => {
         const extremelyLongTitle = Array(20).fill(faker.lorem.paragraph()).join(' ');
         cy.visit('/ghost/#/pages');
         cy.conditionalScreenshot(`${caseFolder}/14-after-navigating-to-pages`);
@@ -144,17 +144,7 @@ describe('Page Creation and Publishing in Ghost', () => {
         cy.conditionalScreenshot(`${caseFolder}/17-after-attempting-publish-with-extremely-long-title`);
     });
 
-    it('debería fallar al crear una page con un título extremadamente largo', () => {
-        cy.visit('/ghost/#/pages');
-        cy.conditionalScreenshot(`${caseFolder}/01-after-navigating-to-pages`);
-        cy.contains(newPageButton).click();
-        cy.url().should('include', '/editor/page');
-        cy.conditionalScreenshot(`${caseFolder}/02-after-clicking-new-page`);
-        cy.get('.publish-button').should('not.exist');
-        cy.conditionalScreenshot(`${caseFolder}/03-after-verification-publish-button-not-present`);
-    });
-
-    it('debería fallar al crear una nueva page con una descripción extremadamente larga', () => {
+   it('debería fallar al crear una nueva page con una descripción extremadamente larga', () => {
         const extremelyLongDescription = Array(20).fill(faker.lorem.paragraphs(10)).join(' ');
         // se queda en 5,420 words
         cy.visit('/ghost/#/pages');
