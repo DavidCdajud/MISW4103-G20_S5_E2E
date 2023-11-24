@@ -16,9 +16,7 @@ describe('Page Creation and Publishing in Ghost', () => {
         cy.loginToGhost(baseUrl);
     });
 
-
-
-    it('should count the words in the description accurately', () => {
+    it('debería contar las palabras en la descripción correctamente', () => {
         const randomPageTitle = 'Test Page Title';
         const pageDescription = 'This is a test description to count words.';
         const expectedWordCount = pageDescription.split(' ').length;
@@ -35,7 +33,7 @@ describe('Page Creation and Publishing in Ghost', () => {
         cy.conditionalScreenshot(`${caseFolder}/105-after-verifying-word-count`);
     });
 
-    /*it('should create a page and then cancel, verifying the page is not created', () => {
+    it('debería crear una página y luego cancelar, verificando que la página no se crea', () => {
         const pageTitle = faker.lorem.sentence();
         const pageDescription = faker.lorem.paragraph();
         cy.visit('/ghost/#/pages');
@@ -58,7 +56,7 @@ describe('Page Creation and Publishing in Ghost', () => {
         });
     });
 
-    /* it('should create a new page with a random title and description', () => {
+    it('debería crear una page con un título y descripción aleatorios', () => {
          const randomPageTitle = faker.lorem.sentence();
          const randomPageDescription = faker.lorem.paragraph();
          cy.visit('/ghost/#/pages');
@@ -81,7 +79,7 @@ describe('Page Creation and Publishing in Ghost', () => {
          cy.conditionalScreenshot(`${caseFolder}/10-after-confirming-publish`);
      });
 
-     it('should create a new page with a random title only', () => {
+     it('debería crear una nueva page solo con título aleatorio sin descripción', () => {
          const randomPageTitle = faker.lorem.sentence();
          cy.visit('/ghost/#/pages');
          cy.conditionalScreenshot(`${caseFolder}/03-after-navigating-to-pages`);
@@ -99,9 +97,9 @@ describe('Page Creation and Publishing in Ghost', () => {
          cy.get(confirmPublishButtonSelector).should('be.visible');
          cy.get(confirmPublishButtonSelector).click();
          cy.conditionalScreenshot(`${caseFolder}/10-after-confirming-publish`);
-     }); */
+     });
 
-    /*it('should allow the creation of a new page without a title but with a description', () => {
+    it('debería permitir la creación de una nueva page sin título pero con descripción', () => {
         const randomPageDescription = faker.lorem.paragraph();
         cy.visit('/ghost/#/pages');
         cy.conditionalScreenshot(`${caseFolder}/03-after-navigating-to-pages`);
@@ -119,9 +117,9 @@ describe('Page Creation and Publishing in Ghost', () => {
         cy.conditionalScreenshot(`${caseFolder}/08-after-confirming-publish`);
         cy.get(successMessageContainer).should('be.visible');
         cy.conditionalScreenshot(`${caseFolder}/09-after-publish-success-visible`);
-    });*/
+    });
 
-    /*it('should fail to create a new page without a title', () => {
+    it('debería fallar al crear una page sin título', () => {
         cy.visit('/ghost/#/pages');
         cy.conditionalScreenshot(`${caseFolder}/10-after-navigating-to-pages`);
         cy.contains(newPageButton).click();
@@ -144,37 +142,33 @@ describe('Page Creation and Publishing in Ghost', () => {
         cy.conditionalScreenshot(`${caseFolder}/16-after-typing-extremely-long-title`);
         cy.get(publishButton).should('not.exist');
         cy.conditionalScreenshot(`${caseFolder}/17-after-attempting-publish-with-extremely-long-title`);
-    });*/
+    });
 
-    /*it('should not display the publish button when both title and description are absent', () => {
+    it('debería fallar al crear una page con un título extremadamente largo', () => {
         cy.visit('/ghost/#/pages');
         cy.conditionalScreenshot(`${caseFolder}/01-after-navigating-to-pages`);
         cy.contains(newPageButton).click();
         cy.url().should('include', '/editor/page');
         cy.conditionalScreenshot(`${caseFolder}/02-after-clicking-new-page`);
-        cy.get('.publish-button').should('not.exist'); // Usar el selector correcto aquí
+        cy.get('.publish-button').should('not.exist');
         cy.conditionalScreenshot(`${caseFolder}/03-after-verification-publish-button-not-present`);
-    });*/
+    });
 
-    /*it('should fail to create a new page with an extremely long description', () => {
-        const extremelyLongDescription = Array(20).fill(faker.lorem.paragraphs(10)).join(' '); // 10 párrafos repetidos 20 veces
+    it('debería fallar al crear una nueva page con una descripción extremadamente larga', () => {
+        const extremelyLongDescription = Array(20).fill(faker.lorem.paragraphs(10)).join(' ');
         // se queda en 5,420 words
         cy.visit('/ghost/#/pages');
         cy.conditionalScreenshot(`${caseFolder}/14-after-navigating-to-pages`);
         cy.contains(newPageButton).click();
         cy.url().should('include', '/editor/page');
         cy.conditionalScreenshot(`${caseFolder}/15-after-clicking-new-page`);
-
-        // Aquí asumimos que el 'div' con 'contenteditable' es el campo de la descripción
         cy.get('div[contenteditable="true"]').first().click({ force: true }).type(extremelyLongDescription, { force: true });
         cy.conditionalScreenshot(`${caseFolder}/16-after-typing-extremely-long-description`);
-
-        // Verificamos que el botón de publicar no exista o que la publicación falle de alguna manera
         cy.get(publishButton).should('not.exist');
         cy.conditionalScreenshot(`${caseFolder}/17-after-attempting-publish-with-extremely-long-description`);
-    });*/
+    });
 
-    /*it('should create a new page with title and description using only special characters', () => {
+    it('debería crear una nueva page con título y descripción usando solo caracteres especiales', () => {
         const specialCharactersTitle = '!@#$%^&*()_+=';
         const specialCharactersDescription = '!@#$%^&*()_+=-[]{};:,.<>?';
         cy.visit('/ghost/#/pages');
@@ -195,5 +189,5 @@ describe('Page Creation and Publishing in Ghost', () => {
         cy.get(confirmPublishButtonSelector).should('be.visible');
         cy.get(confirmPublishButtonSelector).click();
         cy.conditionalScreenshot(`${caseFolder}/41-after-confirming-publish`);
-    });*/
+    });
 });
