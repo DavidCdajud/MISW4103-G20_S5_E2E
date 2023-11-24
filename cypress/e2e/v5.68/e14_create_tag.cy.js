@@ -2,8 +2,6 @@ const faker = require('faker');
 
 describe('Create a tag in Ghost Admin', () => {
     const baseUrl = 'http://localhost:2368';
-    const tagName = 'New Tag Name';
-    const tagDescription = 'A description for the new tag';
     const tagsUrl = '/ghost/#/tags';
     const versionFolder = Cypress.config('baseFolder568');
     const caseFolder = `${versionFolder}caso14`;
@@ -127,6 +125,22 @@ describe('Create a tag in Ghost Admin', () => {
         cy.contains(internalTagName).should('exist');
         cy.conditionalScreenshot(`${caseFolder}/6-after-internal-tag-created`);
     });
+
+    it('debería mostrar un mensaje de error al intentar crear un internal tag vacío con descripcion.', () => {
+        cy.visit(tagsUrl);
+        cy.conditionalScreenshot(`${caseFolder}/1-after-visiting-tags`);
+        cy.get('button[data-test-tags-nav="internal"]').click({force: true});
+        cy.conditionalScreenshot(`${caseFolder}/2-after-clicking-internal-tags`);
+        cy.get('a.ember-view.gh-btn.gh-btn-green').click({force: true});
+        cy.conditionalScreenshot(`${caseFolder}/3-before-creating-new-internal-tag`);
+        const randomTagDescription = faker.lorem.sentence();
+        cy.get('textarea[name="description"]').type(randomTagDescription);
+        cy.contains('Save').click();
+        cy.conditionalScreenshot(`${caseFolder}/4-after-attempting-to-save-empty-internal-tag`);
+        cy.get('span.error p.response').should('contain', 'You must specify a name for the tag.');
+        cy.conditionalScreenshot(`${caseFolder}/5-after-error-message`);
+    });
+
 
     it('debería crear un nuevo internal tag con un nombre aleatorio excesivamente largo', () => {
         let internalTagName = faker.lorem.words(30);

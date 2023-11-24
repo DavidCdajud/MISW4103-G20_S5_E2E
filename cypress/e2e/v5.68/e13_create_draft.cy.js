@@ -2,8 +2,6 @@ const faker = require('faker');
 
 describe('Create a draft in Ghost', () => {
     const baseUrl = 'http://localhost:2368';
-    const postTitle = 'My New Ghost Post';
-    const postContent = 'Contenido del borrador del post.';
     const publishButtonXpath = '//span[normalize-space()=\'Publish\']';
     const successMessage = 'Ready, set, publish. Share it with the world.';
     const versionFolder = Cypress.config('baseFolder568');
@@ -15,13 +13,15 @@ describe('Create a draft in Ghost', () => {
         cy.loginToGhost(baseUrl);
     });
 
-    it('debería crear un draft post con título y descripción', () => {
+    it('debería crear un draft post con título y descripción aleatorios', () => {
+        const postTitle = faker.lorem.sentence();
+        const postContent = faker.lorem.paragraphs(5);
         cy.visit('/ghost/#/editor/post');
         cy.url().should('include', '/ghost/#/editor/post');
         cy.conditionalScreenshot(`${caseFolder}/1-after-navigating-to-post-creation`);
         cy.get('textarea[placeholder="Post title"]', { timeout: 10000 }).should('be.visible').type(postTitle);
         cy.conditionalScreenshot(`${caseFolder}/2-after-typing-title`);
-        cy.xpath('//p[@data-koenig-dnd-droppable="true"]').first().click({force: true}).type(postContent);
+        cy.get('div[contenteditable="true"]').first().click({force: true}).type(postContent);
         cy.conditionalScreenshot(`${caseFolder}/3-after-typing-content`);
         cy.xpath(publishButtonXpath).click();
         cy.conditionalScreenshot(`${caseFolder}/4-after-clicking-publish`);
@@ -29,7 +29,8 @@ describe('Create a draft in Ghost', () => {
         cy.conditionalScreenshot(`${caseFolder}/5-after-publish-success`);
     });
 
-   it('debería crear un draft post sin descripción', () => {
+    it('debería crear un draft post sin descripción', () => {
+        const postTitle = faker.lorem.sentence();
         cy.visit('/ghost/#/editor/post');
         cy.url().should('include', '/ghost/#/editor/post');
         cy.conditionalScreenshot(`${caseFolder}/1`);
@@ -72,7 +73,7 @@ describe('Create a draft in Ghost', () => {
         cy.conditionalScreenshot(`${caseFolder}/3-after-publish-button-should-not-exist`);
     });
 
-   it('debería crear un draft post con título y descripción, y luego contar las palabras', () => {
+   it('debería crear un draft post con título y descripción validando la cantidad de palabras.', () => {
         const postTitle = faker.lorem.sentence();
         const postContent = faker.lorem.paragraphs(5);
         cy.visit('/ghost/#/editor/post');
