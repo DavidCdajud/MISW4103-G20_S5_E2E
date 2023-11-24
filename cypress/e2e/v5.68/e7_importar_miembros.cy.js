@@ -2,7 +2,7 @@ describe('miembro', function() {
     it('importar miembros', function() {
         cy.visit('http://localhost:2368/ghost/');
         inciarSesion();
-        cy.screenshot('/caso7/1admin.png');
+        cy.screenshot('/v5.68/caso7/1admin.png');
         cy.wait(2000);
         ingresarMiembros();
         
@@ -14,23 +14,23 @@ describe('miembro', function() {
     cy.wait(1000);
     cy.get('#password').type('abcde12345');
     cy.wait(1000);
-    cy.screenshot('/caso7/2homepage.png');
+    cy.screenshot('/v5.68/caso7/2homepage.png');
     cy.get('#ember5').click();
   }
   function ingresarMiembros(){
     cy.contains('a', 'Members').click();
     cy.wait(1000);
     cy.get('button.gh-btn[data-test-button="members-actions"]').click();
-    cy.screenshot('/caso7/3miembros.png');
+    cy.screenshot('/v5.68/caso7/3miembros.png');
     cy.contains('span', 'Import members').click();
     cy.wait(1000);
     cy.contains('label', 'Select or drop a CSV file').selectFile('cypress/fixtures/cargar_miembros.csv');
     cy.wait(1000);
-    cy.screenshot('/caso7/4cargaArchivo.png');
+    cy.screenshot('/v5.68/caso7/4cargaArchivo.png');
     cy.contains('button', 'Import 1 member').click();
     cy.wait(1000);
     cy.contains('p.ma0.pa0', 'An unexpected error occurred, please try again').should('be.visible');
-    cy.screenshot('/caso7/5validacionMensajeError.png');
+    cy.screenshot('/v5.68/caso7/5validacionMensajeError.png');
   }
   
   

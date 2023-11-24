@@ -1,7 +1,7 @@
 describe('Settings - Time Zone', function () {
   it('Como dificata UTC', function () {
     cy.viewport(1900, 1500)
-    cy.visit('http://localhost:3001/ghost/');
+    cy.visit('http://localhost:3001/ghost');
     inciarSesion();
     cy.wait(2000);
     settingsTimeZone();

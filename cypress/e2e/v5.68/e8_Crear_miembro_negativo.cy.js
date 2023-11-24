@@ -2,7 +2,7 @@ describe('crear miembro negativo', function() {
     it('crear miembro negativo', function() {
         cy.visit('http://localhost:2368/ghost/');
         inciarSesion();
-        cy.screenshot('/caso8/1admin.png');
+        cy.screenshot('/v5.68/caso8/1admin.png');
         cy.wait(2000);
         ingresarMiembros();
         validarMiembroNoCreado();
@@ -15,7 +15,7 @@ describe('crear miembro negativo', function() {
     cy.wait(1000);
     cy.get('#password').type('abcde12345');
     cy.wait(1000);
-    cy.screenshot('/caso8/2homepage.png');
+    cy.screenshot('/v5.68/caso8/2homepage.png');
     cy.get('#ember5').click();
   }
 
@@ -24,7 +24,7 @@ describe('crear miembro negativo', function() {
     cy.wait(1000);
     cy.contains('a', 'New member').click();
     cy.wait(1000);
-    cy.screenshot('/caso8/3newMember.png');
+    cy.screenshot('/v5.68/caso8/3newMember.png');
     cy.get('#member-name').click();
     cy.get('#member-name').type("Erik Negativo");
     cy.get('#member-email').click();
@@ -33,7 +33,7 @@ describe('crear miembro negativo', function() {
     cy.get('#member-note').type("Esto es una prueba de crear miembro de manera negativa");
     cy.contains('button', 'Save').click();
     cy.wait(1000);
-    cy.screenshot('/caso8/4invalidEmailValidate.png');
+    cy.screenshot('/v5.68/caso8/4invalidEmailValidate.png');
     cy.contains('p.response', 'Invalid Email.').should('be.visible');
     cy.wait(1000);
   }
@@ -44,7 +44,7 @@ describe('crear miembro negativo', function() {
     
     cy.contains('button', 'Leave').click();
     cy.wait(2000);
-    cy.screenshot('/caso8/5volverMembers.png');
+    cy.screenshot('/v5.68/caso8/5volverMembers.png');
     cy.get('a.gh-list-data').contains('Erik Negativo').should('not.exist');
-    cy.screenshot('/caso8/6validarMiembroNoCreado.png');
+    cy.screenshot('/v5.68/caso8/6validarMiembroNoCreado.png');
   }

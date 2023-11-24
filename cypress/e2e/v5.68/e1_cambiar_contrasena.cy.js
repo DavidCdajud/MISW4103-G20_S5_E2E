@@ -19,17 +19,17 @@ function iniciarSesion(pass){
   cy.wait(1000);
   cy.get('#password').type(pass);
   cy.wait(1000);
-  cy.screenshot('/caso1/2homepage.png');
+  cy.screenshot('/v5.68/caso1/1-inicioSesion');
   cy.get('#ember5').click();
 }
 
 function ingresarSettingsStaff(){
   cy.get('#ember34').click();
   cy.wait(1000);
-  cy.screenshot('/caso1/3setting.png');
+  cy.screenshot('/v5.68/caso1/2-settings');
   cy.get('#staff_svg__Regular').click();
   cy.wait(2000);
-  cy.screenshot('/caso1/4staff.png');
+  cy.screenshot('/v5.68/caso1/3-staff');
   cy.get('.user-list-item-figure').click();
 }
 
@@ -39,11 +39,11 @@ function editarContrasena(OldPass,NewPass){
   cy.get('#user-password-new').type(NewPass);
   cy.get('#user-new-password-verification').type(NewPass);
   cy.wait(2000);
-  cy.screenshot('/caso1/5datos.png');
+  cy.screenshot('/v5.68/caso1/4-editarContrasena');
   cy.contains('span', 'Change Password').click();
 } 
 
 function validarCambioContrasena(){
   cy.get('.gh-notification.gh-notification-passive').should('be.visible');
-  cy.screenshot('/caso1/6successful.png');
+  cy.screenshot('/v5.68/caso1/5-validar-contrasena');
 }

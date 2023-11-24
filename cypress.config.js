@@ -3,8 +3,10 @@ const { defineConfig } = require('cypress')
 module.exports = defineConfig({
   e2e: {
     // video: true,
+    printImage: 'false',
     specPattern: "cypress/e2e/**/*.{cy,spec}.{js,ts}",
-    baseUrl: 'http://localhost:3001/ghost/',
+    baseFolder342: '/v3.42/',
+    baseFolder568: '/v5.68/',
     supportFile: 'cypress/support/commands.js',
     videosFolder: 'cypress/videos',
     screenshotsFolder: 'cypress/screenshots',

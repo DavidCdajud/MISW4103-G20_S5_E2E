@@ -19,17 +19,17 @@ function iniciarSesion(pass){
   cy.wait(1000);
   cy.get('#password').type(pass);
   cy.wait(1000);
-  cy.screenshot('/caso3/2homepage.png');
+  cy.screenshot('/v5.68/caso3/1-inicioSesion');
   cy.get('#ember5').click();
 }
 
 function ingresarSettingsNewsletter(){
   cy.get('#ember34').click();
   cy.wait(1000);
-  cy.screenshot('/caso3/3setting.png');
+  cy.screenshot('/v5.68/caso3/2-setting');
   cy.contains('a', 'Email newsletter').click();
   cy.wait(2000);
-  cy.screenshot('/caso3/4news.png');
+  cy.screenshot('/v5.68/caso3/3-news');
 }
 
 function addNewsletter(text){
@@ -37,7 +37,7 @@ function addNewsletter(text){
   cy.wait(2000);
   cy.get('#newsletter-title').type(text);
   cy.get('#newsletter-description').type('Test description');
-  cy.screenshot('/caso3/5add.png');
+  cy.screenshot('/v5.68/caso3/4-add');
   cy.contains('span', 'Create').click();
 } 
 
@@ -49,21 +49,21 @@ function validateCreateNewsletter(text){
 function editNewsletter(text){
   cy.contains('span', 'Actions').click({ force: true });
   cy.wait(2000);
-  cy.screenshot('/caso3/7actions.png');
+  cy.screenshot('/v5.68/caso3/5-actions');
   cy.contains('span', 'Edit').click();
   cy.get('#newsletter-title').clear();
   cy.get('#newsletter-title').type(text);
   cy.get('#newsletter-description').clear();
   cy.get('#newsletter-description').type('Test description edit');
-  cy.screenshot('/caso3/8edit.png');
+  cy.screenshot('/v5.68/caso3/6-edit');
   cy.contains('span', 'Save and close').click();
 } 
 
 function archiveNewsletter(){
   cy.contains('span', 'Actions').click({ force: true });
   cy.wait(2000);
-  cy.screenshot('/caso3/9actions.png');
+  cy.screenshot('/v5.68/caso3/7-actions');
   cy.contains('span', 'Archive').click();
   cy.get('.modal-content').contains('span', 'Archive').click();
-  cy.screenshot('/caso3/10archive.png');
+  cy.screenshot('/v5.68/caso3/8-archive');
 } 
