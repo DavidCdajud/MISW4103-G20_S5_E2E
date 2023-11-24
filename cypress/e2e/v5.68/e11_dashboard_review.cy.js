@@ -11,14 +11,14 @@ describe('Dashboard General Review in Ghost', () => {
         cy.loginToGhost(baseUrl);
     });
 
-    it('should display all the dashboard elements correctly', () => {
+    it('debería mostrar todos los elementos del dashboard correctamente', () => {
         cy.visit(dashboardUrl);
-        cy.screenshot(`${caseFolder}/1-after-visiting-dashboard`);
+        cy.conditionalScreenshot(`${caseFolder}/1-after-visiting-dashboard`);
         cy.xpath(totalMembersXpath).should('exist');
-        cy.screenshot(`${caseFolder}/2-total-members`);
+        cy.conditionalScreenshot(`${caseFolder}/2-total-members`);
         cy.xpath(createdManuallyXpath).should('exist');
-        cy.screenshot(`${caseFolder}/3-created-manually`);
+        cy.conditionalScreenshot(`${caseFolder}/3-created-manually`);
         cy.get(listFooterClass).should('exist');
-        cy.screenshot(`${caseFolder}/4-list-footer`);
+        cy.conditionalScreenshot(`${caseFolder}/4-list-footer`);
     });
 });
