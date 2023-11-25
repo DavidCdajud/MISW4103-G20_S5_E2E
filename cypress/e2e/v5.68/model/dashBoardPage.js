@@ -38,21 +38,7 @@ class DashBoardPage {
         cy.get('.ember-power-select-option--no-matches-message').should('contain', 'No results found');
     }
 
-    searchForTerm(searchTerm) {
-        this.clickSearchButton();
-        cy.get('input[placeholder="Search site"]').type(searchTerm);
-    }
-
-    clearSearchField() {
-        cy.get('input[placeholder="Search site"]').clear();
-    }
-
-    verifySearchButtonVisible() {
-        cy.get('.gh-nav-btn-search').should('be.visible');
-    }
-
     verifySearchResults() {
-        // Asume que el 'ul' tiene un rol de 'listbox' y que los resultados de la búsqueda son 'li' descendientes directos.
         cy.get('ul[role="listbox"] > li').should('have.length.greaterThan', 0);
     }
 
