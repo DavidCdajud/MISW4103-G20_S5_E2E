@@ -1,5 +1,7 @@
 describe('Settings - Time Zone', function () {
   it('Como dificata UTC', function () {
+    cy.clearCookies();
+    cy.clearLocalStorage();
     cy.viewport(1900, 1500)
     cy.visit('http://localhost:2368/ghost/');
     inciarSesion();
@@ -18,16 +20,16 @@ function inciarSesion() {
 }
 
 function settingsTimeZone() {
-  cy.screenshot('/v5.68/caso17/Settings TimeZone');
+  cy.screenshot('/v5.68/caso17_1_apriori/Settings TimeZone');
   cy.get('[data-test-nav="settings"]').click();
   cy.wait(1000);
   cy.contains('General').click();
   cy.get('button.gh-btn[data-test-toggle-timezone]').click();
   cy.wait(2000);
-  cy.screenshot('/v5.68/caso17/Pre-TimeZone');
+  cy.screenshot('/v5.68/caso17_1_apriori/Pre-TimeZone');
   cy.get('#timezone').select('(GMT -5:00) Bogota, Lima, Quito');
-  cy.screenshot('/v5.68/caso17/Post-TimeZone');
+  cy.screenshot('/v5.68/caso17_1_apriori/Post-TimeZone');
   cy.contains("Save").click();
-  cy.screenshot('/v5.68/caso17/SavedSettings')
+  cy.screenshot('/v5.68/caso17_1_apriori/SavedSettings')
 }
 
