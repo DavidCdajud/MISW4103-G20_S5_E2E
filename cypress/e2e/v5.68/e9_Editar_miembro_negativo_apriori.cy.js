@@ -47,6 +47,6 @@ function validarMiembroNoCreado() {
 
   cy.contains('button', 'Leave').click();
   cy.wait(2000);
-  cy.get('a.gh-list-data').contains('Erik').should('be.visible');
+  cy.get('a.gh-list-data').contains('Erik Negativo').should('not.exist');
   cy.screenshot('/v5.68/caso9/6ValidarNoEditado.png');
 }
