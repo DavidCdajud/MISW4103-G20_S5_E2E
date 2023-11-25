@@ -1,6 +1,6 @@
 import faker from "faker";
 
-describe('Meta Card', function () {
+describe('Meta Card - max character title', function () {
     it('Customize structured data of your site for Meta', function () {
         cy.clearCookies();
         cy.clearLocalStorage();

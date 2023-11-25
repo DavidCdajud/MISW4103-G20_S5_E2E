@@ -1,5 +1,5 @@
-describe('X Card', function () {
-    it('Customize structured data of your site for X', function () {
+describe('Metacard - max character body', function () {
+    it('Customize structured data of your site for metacard', function () {
         cy.clearCookies();
         cy.clearLocalStorage();
         cy.viewport(1900, 1500)

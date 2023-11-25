@@ -1,7 +1,7 @@
 import 'cypress-file-upload';
 
 
-describe('Facebook Card', function () {
+describe('Facebook Card - max character title', function () {
     it('Customize structured data of your site for Facebook', function () {
         cy.clearCookies();
         cy.clearLocalStorage();

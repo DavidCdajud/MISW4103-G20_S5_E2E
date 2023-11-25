@@ -14,7 +14,7 @@ varTag = dataMocka[getRandomArbitrary(1, 50)].dimTag;
 varNum = dataMocka[getRandomArbitrary(1, 50)].dimNum;
 varLongDescription = dataMocka[getRandomArbitrary(1, 50)].dimLongDescription;
 
-describe('Meta Card', function () {
+describe('Meta Card - max character title', function () {
     it('Customize structured data of your site for Meta', function () {
         cy.clearCookies();
         cy.clearLocalStorage();

@@ -1,4 +1,4 @@
-describe('X Card', function () {
+describe('X Card - max character title', function () {
     it('Customize structured data of your site for X', function () {
         cy.clearCookies();
         cy.clearLocalStorage();
