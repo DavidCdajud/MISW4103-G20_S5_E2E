@@ -15,7 +15,7 @@ varNum = dataMocka[getRandomArbitrary(1, 50)].dimNum;
 varLongDescription = dataMocka[getRandomArbitrary(1, 50)].dimLongDescription;
 
 
-describe('X Card', function () {
+describe('X Card - max character title', function () {
     it('Customize structured data of your site for X', function () {
         cy.clearCookies();
         cy.clearLocalStorage();

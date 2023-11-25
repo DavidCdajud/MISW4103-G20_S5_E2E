@@ -16,7 +16,7 @@ varNum = dataMocka[getRandomArbitrary(1, 50)].dimNum;
 
 import 'cypress-file-upload';
 
-describe('X Card', function () {
+describe('X Card creation', function () {
     it('Customize structured data of your site for X', function () {
         cy.clearCookies();
         cy.clearLocalStorage();

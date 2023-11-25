@@ -2,7 +2,7 @@ import 'cypress-file-upload';
 import faker from 'faker';
 
 
-describe('Facebook Card', function () {
+describe('Facebook Card creation', function () {
     it('Customize structured data of your site for Facebook', function () {
         cy.clearCookies();
         cy.clearLocalStorage();

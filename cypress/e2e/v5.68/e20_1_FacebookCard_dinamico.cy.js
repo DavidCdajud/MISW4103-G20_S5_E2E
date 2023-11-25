@@ -14,7 +14,7 @@ varBody = dataMocka[getRandomArbitrary(1, 50)].dimBody;
 varTag = dataMocka[getRandomArbitrary(1, 50)].dimTag;
 varNum = dataMocka[getRandomArbitrary(1, 50)].dimNum;
 
-describe('Facebook Card', function () {
+describe('Facebook Card creation', function () {
     it('Customize structured data of your site for Facebook', function () {
         cy.clearCookies();
         cy.clearLocalStorage();

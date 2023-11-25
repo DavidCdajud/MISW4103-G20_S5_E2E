@@ -14,7 +14,7 @@ varTag = dataMocka[getRandomArbitrary(1, 50)].dimTag;
 varNum = dataMocka[getRandomArbitrary(1, 50)].dimNum;
 varLongDescription = dataMocka[getRandomArbitrary(1, 50)].dimLongDescription;
 
-describe('Post', function () {
+describe('Post ', function () {
     it('Nuevo Post - Excerpt mayor a 300 caracteres', function () {
         cy.clearCookies();
         cy.clearLocalStorage();

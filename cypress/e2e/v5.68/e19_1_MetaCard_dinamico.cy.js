@@ -12,8 +12,8 @@ varBody = dataMocka[getRandomArbitrary(1, 50)].dimBody;
 varTag = dataMocka[getRandomArbitrary(1, 50)].dimTag;
 varNum = dataMocka[getRandomArbitrary(1, 50)].dimNum;
 
-describe('X Card', function () {
-    it('Customize structured data of your site for X', function () {
+describe('Metacard creation', function () {
+    it('Customize structured data of your site for Metacard', function () {
         cy.clearCookies();
         cy.clearLocalStorage();
         cy.viewport(1900, 1500)
