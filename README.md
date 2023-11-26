@@ -89,6 +89,11 @@ npm install -g resemblejs
 node index.js
 
 ```
+### Instalación de Faker
+
+```
+npm install faker --save-dev
+```
 
 ### CMD coding para v3.42 sin docker
 ```
