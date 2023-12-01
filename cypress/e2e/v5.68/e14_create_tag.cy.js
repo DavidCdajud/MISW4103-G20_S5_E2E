@@ -1,3 +1,4 @@
+
 const faker = require('faker');
 
 describe('Create a tag in Ghost Admin', () => {
@@ -10,6 +11,51 @@ describe('Create a tag in Ghost Admin', () => {
         cy.clearCookies();
         cy.clearLocalStorage();
         cy.loginToGhost(baseUrl);
+    });
+
+
+    it('debería cambiar el color de un tag de manera aleatoria y verificar el cambio', () => {
+        cy.visit(tagsUrl);
+        cy.conditionalScreenshot(`${caseFolder}/1-pagina-inicial-tags`);
+        cy.get('.gh-tag-list-name').first().click();
+        const nuevoColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        cy.get('input[name="accent-color"]').first().invoke('val', nuevoColor).trigger('change');
+        cy.conditionalScreenshot(`${caseFolder}/3-despues-de-cambiar-color`);
+        cy.contains('Save').click();
+        cy.conditionalScreenshot(`${caseFolder}/4-despues-de-guardar-cambios`);
+    });
+
+
+    it('debería actualizar el nombre de un tag existente', () => {
+        const newName = faker.lorem.word();
+        const newDescription = faker.lorem.sentence();
+        cy.visit(tagsUrl);
+        cy.get('.gh-tag-list-name').first().click();
+        cy.get('input[name="name"]').clear().type(newName);
+        cy.get('textarea[name="description"]').clear().type(newDescription);
+        cy.contains('Save').click();
+        cy.visit(tagsUrl);
+        cy.get('.gh-tag-list-name').contains(newName).should('exist');
+        cy.conditionalScreenshot(`${caseFolder}/1-after-updating-tag`);
+    });
+
+    it('debería eliminar un tag existente', () => {
+        const randomTagName = faker.lorem.word();
+        cy.visit(tagsUrl);
+        cy.contains('New tag').click();
+        cy.get('input[name="name"]').type(randomTagName);
+        cy.get('textarea[name="description"]').type(faker.lorem.sentence());
+        cy.contains('Save').click();
+        cy.contains(randomTagName).should('exist');
+        cy.conditionalScreenshot(`${caseFolder}/1-after-creating-tag`);
+        cy.contains(randomTagName).click();
+        cy.contains('Delete tag').click();
+        cy.get('.modal-footer .gh-btn-red').contains('Delete').click();
+        cy.conditionalScreenshot(`${caseFolder}/2-after-deleting-tag`);
+        cy.visit(tagsUrl);
+        cy.reload();
+        cy.get('body', { timeout: 10000 }).should('not.contain', randomTagName); // Aumentar tiempo de espera
+        cy.conditionalScreenshot(`${caseFolder}/3-after-verification-of-deletion`);
     });
 
     it('debería crear un nuevo tag con nombre y descripción aleatorios', () => {
