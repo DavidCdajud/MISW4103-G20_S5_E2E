@@ -1,4 +1,4 @@
-# MISW4103-G20_S5_E2E_CYPRESS
+# MISW4103-G20_S7_E2E_CYPRESS
 
 ### Video presentación
 
@@ -122,4 +122,28 @@ Open the e2e test and run it
 
 # Repositorio Kraken
 https://github.com/jhosalarcon/MISW4103-G20_S5_Kraken_E2E
+
+# Entrega Semana 7
+
+## Enlaces Importantes
+
+- **Estrategia de generación de Datos junto documentacion de los scripts**:  
+  [Visitar](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki/07.-Generaci%C3%B3n-de-datos)
+
+- **Definiciòn Escenarios de Prueba**:  
+  [Visitar](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki/08.-Escenarios)
+
+- **Información General de la Wikipedia**:  
+  [Visitar](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki)
+
+- **Scripts Ejecutados (v5.68)**:  
+  [Visitar](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/tree/main/cypress/e2e/v5.68)
+
+## Detalles de Acceso
+
+- **Email**: `pruebas@correo.com`
+- **Contraseña**: `Test654321`
+
+
+
 
