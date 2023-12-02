@@ -159,4 +159,37 @@ Version de Ghost usada 5.68
 - **Inventario de pruebas manuales**
   https://uniandes-my.sharepoint.com/:x:/g/personal/jd_fajardor1_uniandes_edu_co/EbSDXLU2UqFEpTOVu-zj6-kBGHIgt2bjgXI0nh99sjnN7Q?e=K4xQyk
 
+- **Pruebas E2E**
 
+  - Configuración de impresión de imágenes:
+    - [Configuración en `cypress.config.js`](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress.config.js)
+      - Se puede verificar usando la variable `printImage: 'true' o 'false'` para validar la ejecución de imágenes.
+
+  - Scripts de pruebas:
+    - [e11_dashboard_review.cy.js](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress/e2e/v5.68/e11_dashboard_review.cy.js)
+    - [e12_page_creation.cy.js](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress/e2e/v5.68/e12_page_creation.cy.js)
+    - [e13_create_draft.cy.js](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress/e2e/v5.68/e13_create_draft.cy.js)
+    - [e14_create_tag.cy.js](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress/e2e/v5.68/e14_create_tag.cy.js)
+    - [e15_theme_verification.cy.js](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress/e2e/v5.68/e15_theme_verification.cy.js)
+
+  - Ejecución de pruebas en diferentes navegadores:
+    - **Electron**:
+      ```
+      npx cypress run --browser electron --spec "cypress/e2e/v5.68/e11_dashboard_review.cy.js,cypress/e2e/v5.68/e12_page_creation.cy.js,cypress/e2e/v5.68/e13_create_draft.cy.js,cypress/e2e/v5.68/e14_create_tag.cy.js,cypress/e2e/v5.68/e15_theme_verification.cy.js"
+      ```
+      - [Log de Electron](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/pruebase2emultiplesnavegadores/log-electron.txt)
+
+    - **Firefox**:
+      ```
+      npx cypress run --browser firefox --spec "cypress/e2e/v5.68/e11_dashboard_review.cy.js,cypress/e2e/v5.68/e12_page_creation.cy.js,cypress/e2e/v5.68/e13_create_draft.cy.js,cypress/e2e/v5.68/e14_create_tag.cy.js,cypress/e2e/v5.68/e15_theme_verification.cy.js"
+      ```
+      - [Log de Firefox](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/pruebase2emultiplesnavegadores/log-firefox.txt)
+
+    - **Chrome**:
+      ```
+      npx cypress run --browser chrome --spec "cypress/e2e/v5.68/e11_dashboard_review.cy.js, cypress/e2e/v5.68/e12_page_creation.cy.js, cypress/e2e/v5.68/e13_create_draft.cy.js, cypress/e2e/v5.68/e14_create_tag.cy.js, cypress/e2e/v5.68/e15_theme_verification.cy.js"
+      ```
+      - [Log de Chrome](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/pruebase2emultiplesnavegadores/log-chrome.txt)
+
+  - Reporte de resultados:
+    - [Reporte en GitHub](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/tree/develop/pruebase2emultiplesnavegadores)
