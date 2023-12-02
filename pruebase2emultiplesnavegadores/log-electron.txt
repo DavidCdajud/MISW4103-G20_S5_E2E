@@ -1,0 +1,578 @@
+javierfajardo@iMac-de-javier MISW4103-G20_S5_E2E % npx cypress run --browser electron --spec "cypress/e2e/v5.68/e11_dashboard_review.cy.js,cypress/e2e/v5.68/e12_page_creation.cy.js,cypress/e2e/v5.68/e13_create_draft.cy.js,cypress/e2e/v5.68/e14_create_tag.cy.js,cypress/e2e/v5.68/e15_theme_verification.cy.js"
+
+DevTools listening on ws://127.0.0.1:59809/devtools/browser/c46bf107-6599-45b7-8f32-86843ed8bcdb
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.4.0                                                                         │
+  │ Browser:        Electron 114 (headless)                                                        │
+  │ Node Version:   v18.18.1 (/usr/local/bin/node)                                                 │
+  │ Specs:          5 found (e11_dashboard_review.cy.js, e12_page_creation.cy.js, e13_create_draft │
+  │                 .cy.js, e14_create_tag.cy.js, e15_theme_verification.cy.js)                    │
+  │ Searched:       cypress/e2e/v5.68/e11_dashboard_review.cy.js, cypress/e2e/v5.68/e12_page_creat │
+  │                 ion.cy.js, cypress/e2e/v5.68/e13_create_draft.cy.js, cypress/e2e/v5.68/e14_cre │
+  │                 ate_tag.cy.js, cypress/e2e/v5.68/e15_theme_verification.cy.js                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e11_dashboard_review.cy.js                                                      (1 of 5)
+
+
+  Dashboard General Review in Ghost
+[26061:1202/074443.183107:ERROR:system_services.cc(34)] SetApplicationIsDaemon: Error Domain=NSOSStatusErrorDomain Code=-50 "paramErr: error in user parameter list" (-50)
+    ✓ debería mostrar todos los elementos del dashboard correctamente (5017ms)
+
+
+  1 passing (7s)
+
+[mochawesome] Report JSON saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_054.json
+
+[mochawesome] Report HTML saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_054.html
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  4                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     e11_dashboard_review.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e11_da     (1280x720)
+     shboard_review.cy.js/v5.68/caso11electron/1-after-visiting-dashboard.png                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e11_da     (1280x720)
+     shboard_review.cy.js/v5.68/caso11electron/2-total-members.png                                  
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e11_da     (1280x720)
+     shboard_review.cy.js/v5.68/caso11electron/3-created-manually.png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e11_da     (1280x720)
+     shboard_review.cy.js/v5.68/caso11electron/4-list-footer.png                                    
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e12_page_creation.cy.js                                                         (2 of 5)
+
+
+  Page Creation and Publishing in Ghost
+    ✓ debería crear una página y verificar su vista previa (8790ms)
+    ✓ debería contar las palabras aleatoriamente en la descripción al crear una Page (9122ms)
+    ✓ debería crear una página y luego cancelar, verificando que la página no se crea (11268ms)
+    ✓ debería crear una page con un título y descripción aleatorios (11267ms)
+    ✓ debería crear una nueva page solo con título aleatorio sin descripción (5789ms)
+    ✓ debería permitir la creación de una nueva Page sin título pero con descripción (9910ms)
+    ✓ debería fallar al crear una page sin título
+    ✓ debería fallar al crear una nueva Page con un título extremadamente largo (34121ms)
+    ✓ debería fallar al crear una nueva page con una descripción extremadamente larga (788944ms)
+    ✓ debería crear una nueva page con título y descripción usando solo caracteres especiales (6064ms)
+
+
+  10 passing (15m)
+
+[mochawesome] Report JSON saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_055.json
+
+[mochawesome] Report HTML saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_055.html
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        10                                                                               │
+  │ Passing:      10                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  58                                                                               │
+  │ Video:        false                                                                            │
+  │ Duration:     14 minutes, 52 seconds                                                           │
+  │ Spec Ran:     e12_page_creation.cy.js                                                          │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/401-after-navigating-to-pages.png                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/402-after-clicking-new-page.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/403-after-typing-page-details.png                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/404-after-clicking-preview-button.png                   
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/405-after-verifying-preview.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/101-after-navigating-to-pages.png                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/102-after-clicking-new-page.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/103-after-typing-title.png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/104-after-typing-description.png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/105-after-verifying-word-count.png                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/71-after-navigating-to-pages.png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/72-after-clicking-new-page.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/73-after-typing-title.png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/74-after-typing-description.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/75-after-clicking-cancel.png                            
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/76-after-verifying-page-not-created.png                 
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/03-after-navigating-to-pages.png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/04-after-clicking-new-page.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/05-after-typing-title.png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/06-after-typing-description.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/07-after-clicking-publish.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/08-after-publish-success-visible.png                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/09-after-clicking-continue.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/10-after-confirming-publish.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/03-after-navigating-to-pages (1).png                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/04-after-clicking-new-page (1).png                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/05-after-typing-title (1).png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/07-after-clicking-publish (1).png                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/08-after-publish-success-visible (1).png                
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/09-after-clicking-continue (1).png                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/10-after-confirming-publish (1).png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/03-after-navigating-to-pages (2).png                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/04-after-clicking-new-page (2).png                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/05-after-typing-description.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/06-after-clicking-publish.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/07-after-clicking-continue.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/08-after-confirming-publish.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/09-after-publish-success-visible.png                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/10-after-navigating-to-pages.png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/11-after-clicking-new-page.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/12-after-attempting-publish-without-title               
+     .png                                                                                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/13-after-confirming-no-navigation-on-erro               
+     r.png                                                                                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/14-after-navigating-to-pages.png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/15-after-clicking-new-page.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/16-after-typing-extremely-long-title.png                
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/17-after-attempting-publish-with-extremel               
+     y-long-title.png                                                                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/14-after-navigating-to-pages (1).png                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/15-after-clicking-new-page (1).png                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/16-after-typing-extremely-long-descriptio               
+     n.png                                                                                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/17-after-attempting-publish-with-extremel               
+     y-long-description.png                                                                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/34-after-navigating-to-pages.png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/35-after-clicking-new-page.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/36-after-typing-special-characters-title.               
+     png                                                                                            
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/37-after-typing-special-characters-descri               
+     ption.png                                                                                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/38-after-clicking-publish.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/39-after-publish-success-visible.png                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/40-after-clicking-continue.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12electron/41-after-confirming-publish.png                         
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e13_create_draft.cy.js                                                          (3 of 5)
+
+
+  Create a draft in Ghost
+    ✓ debería crear y luego editar un borrador (25912ms)
+    ✓ debería crear un draft post con título y descripción aleatorios (21372ms)
+    ✓ debería crear un draft post sin descripción
+    ✓ debería mostrar un error cuando el título del post es más largo de 255 caracteres (5552ms)
+    ✓ debería verificar que el botón de publicar no esté presente cuando son solo caracteres especiales
+    ✓ debería crear un draft post con título y descripción validando la cantidad de palabras. (20559ms)
+    ✓ debería crear un draft post con un título aleatorio y contenido con caracteres especiales
+    ✓ debería crear un post sin título pero con contenido aleatorio (13723ms)
+
+
+  8 passing (2m)
+
+[mochawesome] Report JSON saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_056.json
+
+[mochawesome] Report HTML saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_056.html
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        8                                                                                │
+  │ Passing:      8                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  26                                                                               │
+  │ Video:        false                                                                            │
+  │ Duration:     1 minute, 42 seconds                                                             │
+  │ Spec Ran:     e13_create_draft.cy.js                                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/1-after-editing-draft.png                                
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/1-after-navigating-to-post-creation.png                  
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/2-after-typing-title.png                                 
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/3-after-typing-content.png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/4-after-clicking-publish.png                             
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/5-after-publish-success.png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/1.png                                                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/2.png                                                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/4.png                                                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/5.png                                                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/1-after-navigating-to-post-creation (1).pn               
+     g                                                                                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/2-after-typing-title (1).png                             
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/3-after-publish-button-should-not-exist.pn               
+     g                                                                                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/1-after-navigating-to-post-creation (2).pn               
+     g                                                                                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/2-after-typing-title (2).png                             
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/3-after-typing-content (1).png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/4-after-verifying-word-count.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/1-after-navigating-to-post-creation (3).pn               
+     g                                                                                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/2-after-typing-title (3).png                             
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/3-after-typing-special-characters.png                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/4-after-clicking-save-draft.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/5-after-draft-save-success.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/1-after-navigating-to-post-creation (4).pn               
+     g                                                                                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/2-after-typing-content.png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/3-after-clicking-publish.png                             
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13electron/4-after-publish-success.png                              
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e14_create_tag.cy.js                                                            (4 of 5)
+
+
+  Create a tag in Ghost Admin
+    ✓ debería cambiar el color de un tag de manera aleatoria y verificar el cambio
+    ✓ debería actualizar el nombre de un tag existente
+    ✓ debería eliminar un tag existente
+    ✓ debería crear un nuevo tag con nombre y descripción aleatorios
+    ✓ debería crear un nuevo tag con un nombre aleatorio
+    ✓ no debería permitir la creación de un nuevo tag sin nombre
+    ✓ no debería permitir la creación de un nuevo tag con un nombre excesivamente largo (6366ms)
+    ✓ no debería permitir la creación de un nuevo tag con un nombre válido y una descripción excesivamente larga (11507ms)
+    1) debería crear un nuevo tag y subir una imagen de Unsplash
+    ✓ debería crear un nuevo internal tag (5570ms)
+    ✓ debería mostrar un mensaje de error al intentar crear un internal tag vacío con descripcion.
+    ✓ debería crear un nuevo internal tag con un nombre aleatorio excesivamente largo (8683ms)
+    ✓ debería crear un nuevo internal tag con un nombre aleatorio y una descripción aleatoria excesivamente larga (11490ms)
+
+
+  12 passing (2m)
+  1 failing
+
+  1) Create a tag in Ghost Admin
+       debería crear un nuevo tag y subir una imagen de Unsplash:
+     AssertionError: Timed out retrying after 10000ms: Expected to find element: `section.gh-unsplash-grid`, but never found it.
+      at Context.eval (webpack://PruebasCypress/./cypress/e2e/v5.68/e14_create_tag.cy.js:147:11)
+
+
+
+[mochawesome] Report JSON saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_057.json
+
+[mochawesome] Report HTML saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_057.html
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        13                                                                               │
+  │ Passing:      12                                                                               │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  60                                                                               │
+  │ Video:        false                                                                            │
+  │ Duration:     1 minute, 32 seconds                                                             │
+  │ Spec Ran:     e14_create_tag.cy.js                                                             │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/1-pagina-inicial-tags.png                                  
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/3-despues-de-cambiar-color.png                             
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/4-despues-de-guardar-cambios.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/1-after-updating-tag.png                                   
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/1-after-creating-tag.png                                   
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/2-after-deleting-tag.png                                   
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/3-after-verification-of-deletion.png                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/1-after-visiting-tags.png                                  
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/2-before-creating-tag.png                                  
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/3-after-entering-tag-info.png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/4-after-saving-tag.png                                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/5-after-tag-created.png                                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/1-after-visiting-tags (1).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/2-before-creating-tag (1).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/3-after-entering-tag-name.png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/4-after-saving-tag (1).png                                 
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/5-after-tag-created (1).png                                
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/1-after-visiting-tags (2).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/2-before-creating-tag (2).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/3-after-entering-tag-description.png                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/4-after-attempting-to-save-tag.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/5-after-error-message.png                                  
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/1-after-visiting-tags (3).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/2-before-creating-tag (3).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/3-after-entering-long-tag-name.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/4-after-attempting-to-save-tag (1).png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/5-after-error-message (1).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/1-after-visiting-tags (4).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/2-before-creating-tag (4).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/3-after-entering-tag-name (1).png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/4-after-entering-long-tag-description.png                  
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/5-after-attempting-to-save-tag.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/6-after-error-message.png                                  
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/1-after-visiting-tags (5).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/2-before-creating-tag (5).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/3-after-entering-tag-name (2).png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/4-after-clicking-image-upload-button.png                   
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/Create a tag in Ghost Admin -- debería crear un nuevo tag y subir               
+      una imagen de Unsplash (failed).png                                                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/1-after-visiting-tags (6).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/2-after-clicking-internal-tags.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/3-before-creating-new-tag.png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/4-after-entering-internal-tag-info.png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/5-after-saving-internal-tag.png                            
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/6-after-internal-tag-created.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/1-after-visiting-tags (7).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/2-after-clicking-internal-tags (1).png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/3-before-creating-new-internal-tag.png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/4-after-attempting-to-save-empty-internal-ta               
+     g.png                                                                                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/5-after-error-message (2).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/1-after-visiting-tags (8).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/2-after-clicking-internal-tags (2).png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/3-before-creating-new-tag (1).png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/4-after-entering-internal-tag-info (1).png                 
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/5-after-saving-internal-tag (1).png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/6-after-internal-tag-created (1).png                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/1-after-visiting-tags (9).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/2-after-clicking-internal-tags (3).png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/3-before-creating-new-tag (2).png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/4-after-entering-internal-tag-info (2).png                 
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14electron/5-after-attempt-to-save-internal-tag.png                   
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e15_theme_verification.cy.js                                                    (5 of 5)
+
+
+  Theme toggle in Ghost Admin
+    ✓ debería cambiar entre light y dark themes
+    ✓ no debería mostrar resultados para un término de búsqueda poco probable con un carácter adicional
+    ✓ debería mostrar resultados para una de búsqueda válido
+
+
+  3 passing (13s)
+
+[mochawesome] Report JSON saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_058.json
+
+[mochawesome] Report HTML saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_058.html
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        3                                                                                │
+  │ Passing:      3                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  7                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     13 seconds                                                                       │
+  │ Spec Ran:     e15_theme_verification.cy.js                                                     │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/casoelectron/1-dashboard-initial.png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/casoelectron/2-dashboard-dark-theme.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/casoelectron/3-dashboard-light-theme.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/casoelectron/1-dashboard-initial (1).png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/casoelectron/11-search-no-results.png                             
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/casoelectron/1-dashboard-initial (2).png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/casoelectron/search-results-for-valid-term.png                    
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  e11_dashboard_review.cy.js               00:06        1        1        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  e12_page_creation.cy.js                  14:52       10       10        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  e13_create_draft.cy.js                   01:42        8        8        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  e14_create_tag.cy.js                     01:32       13       12        1        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  e15_theme_verification.cy.js             00:13        3        3        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✖  1 of 5 failed (20%)                      18:26       35       34        1        -        -  
+
+javierfajardo@iMac-de-javier MISW4103-G20_S5_E2E % 

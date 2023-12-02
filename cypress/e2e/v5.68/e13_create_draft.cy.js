@@ -13,6 +13,24 @@ describe('Create a draft in Ghost', () => {
         cy.loginToGhost(baseUrl);
     });
 
+    it('debería crear y luego editar un borrador', () => {
+        const postTitle = faker.lorem.sentence();
+        const postContent = faker.lorem.paragraphs(5);
+        const updatedContent = 'Contenido actualizado ' + faker.lorem.paragraph();
+        cy.visit('/ghost/#/editor/post');
+        cy.get('textarea[placeholder="Post title"]').type(postTitle);
+        cy.get('div[contenteditable="true"]').first().click({force: true}).type(postContent);
+        cy.xpath(publishButtonXpath).click();
+        cy.contains(successMessage).should('be.visible');
+        cy.visit('/ghost/#/posts?type=draft');
+        cy.contains(postTitle).click();
+        cy.get('div[contenteditable="true"]').first().clear().type(updatedContent);
+        cy.xpath(publishButtonXpath).click();
+        cy.contains(successMessage).should('be.visible');
+        cy.contains(updatedContent).should('exist');
+        cy.conditionalScreenshot(`${caseFolder}/1-after-editing-draft`);
+    });
+
     it('debería crear un draft post con título y descripción aleatorios', () => {
         const postTitle = faker.lorem.sentence();
         const postContent = faker.lorem.paragraphs(5);

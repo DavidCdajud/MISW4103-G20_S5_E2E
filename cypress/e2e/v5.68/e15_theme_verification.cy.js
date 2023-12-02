@@ -1,8 +1,4 @@
 const DashboardPage = require('./model/dashBoardPage.js');
-function performActionAndScreenshot(action, screenshotName) {
-    action();
-    cy.conditionalScreenshot(screenshotName);
-}
 
 describe('Theme toggle in Ghost Admin', () => {
     const baseUrl = 'http://localhost:2368';
@@ -14,17 +10,17 @@ describe('Theme toggle in Ghost Admin', () => {
         cy.clearCookies();
         cy.clearLocalStorage();
         cy.loginToGhost(baseUrl);
-        performActionAndScreenshot(() => {
+        cy.performActionAndScreenshot(() => {
             dashboardPage.visitDashboard();
         }, `${caseFolder}/1-dashboard-initial`);
     });
 
     it('debería cambiar entre light y dark themes', () => {
-        performActionAndScreenshot(() => {
+        cy.performActionAndScreenshot(() => {
             dashboardPage.toggleTheme('dark');
             dashboardPage.confirmTheme('dark');
         }, `${caseFolder}/2-dashboard-dark-theme`);
-        performActionAndScreenshot(() => {
+        cy.performActionAndScreenshot(() => {
             dashboardPage.toggleTheme('light');
             dashboardPage.confirmTheme('light');
         }, `${caseFolder}/3-dashboard-light-theme`);
@@ -34,7 +30,7 @@ describe('Theme toggle in Ghost Admin', () => {
         const searchTermNegative = 'XWZXYZ';
         const additionalChar = 'a';
         const typeDelay = 100;
-        performActionAndScreenshot(() => {
+        cy.performActionAndScreenshot(() => {
             dashboardPage.clickSearchButton();
             dashboardPage.typeSearchTerm(searchTermNegative, typeDelay);
             dashboardPage.typeSearchTerm(additionalChar, typeDelay);
@@ -42,14 +38,13 @@ describe('Theme toggle in Ghost Admin', () => {
         }, `${caseFolder}/11-search-no-results`);
     });
 
-
     it('debería mostrar resultados para una de búsqueda válido', () => {
         const validSearchTerm = 'A';
         dashboardPage.visitDashboard();
-        performActionAndScreenshot(() => {
+        cy.performActionAndScreenshot(() => {
             dashboardPage.clickSearchButton();
             dashboardPage.typeSearchTerm(validSearchTerm);
-            dashboardPage.verifySearchResults(); // Aquí se espera que haya resultados.
+            dashboardPage.verifySearchResults();
         }, `${caseFolder}/search-results-for-valid-term`);
     });
 });

@@ -42,7 +42,17 @@ class DashBoardPage {
         cy.get('ul[role="listbox"] > li').should('have.length.greaterThan', 0);
     }
 
+    visitTotalMembers() {
+        cy.xpath("//h5[normalize-space()='Total members']").should('exist');
+    }
 
+    visitCreatedManually() {
+        cy.xpath("//span[normalize-space()='Created manually']").should('exist');
+    }
+
+    checkListFooter() {
+        cy.get(".gh-dashboard-list-footer").should('exist');
+    }
 }
 
 module.exports = DashBoardPage;

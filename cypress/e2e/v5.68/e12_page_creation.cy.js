@@ -16,6 +16,23 @@ describe('Page Creation and Publishing in Ghost', () => {
         cy.loginToGhost(baseUrl);
     });
 
+
+    it('debería crear una página y verificar su vista previa', () => {
+        const randomPageTitle = faker.lorem.sentence();
+        const randomPageDescription = faker.lorem.paragraph();
+        cy.visit('/ghost/#/pages');
+        cy.conditionalScreenshot(`${caseFolder}/401-after-navigating-to-pages`);
+        cy.contains(newPageButton).click();
+        cy.url().should('include', '/editor/page');
+        cy.conditionalScreenshot(`${caseFolder}/402-after-clicking-new-page`);
+        cy.get('textarea[placeholder="Page title"]').type(randomPageTitle).type('{enter}');
+        cy.get('div[contenteditable="true"]').first().click({ force: true }).type(randomPageDescription);
+        cy.conditionalScreenshot(`${caseFolder}/403-after-typing-page-details`);
+        cy.contains('button', 'Preview').click();
+        cy.conditionalScreenshot(`${caseFolder}/404-after-clicking-preview-button`);
+        cy.conditionalScreenshot(`${caseFolder}/405-after-verifying-preview`);
+    });
+
     it('debería contar las palabras aleatoriamente en la descripción al crear una Page', () => {
         const randomPageTitle = faker.commerce.productName();
         const pageDescription = faker.lorem.sentence(50);
