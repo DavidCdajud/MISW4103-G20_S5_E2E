@@ -153,6 +153,10 @@ Version de Ghost usada 5.68
 
 # Entrega Semana 8
 
+- **Incidencias Reportadas**
+
+  - Wiki de las incidencias reportadas: [Incidencias en GitHub](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/issues)
+
 - **Estrategia de pruebas**
   https://uniandes-my.sharepoint.com/:w:/g/personal/jd_fajardor1_uniandes_edu_co/EeP0mywNIABGi_wpKPyN6E8B2Qy8df7xuQqvsmbZKQeKOQ?e=SCeiHJ
 
