@@ -165,8 +165,7 @@ Version de Ghost usada 5.68
 
 - **Pruebas E2E**
 
-  - Configuración de impresión de imágenes:
-    - [Configuración en `cypress.config.js`](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress.config.js)
+  - Configuración de impresión de imágenes: [Configuración en `cypress.config.js`](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/cypress.config.js)
       - Se puede verificar usando la variable `printImage: 'true' o 'false'` para validar la ejecución de imágenes.
 
   - Scripts de pruebas:
@@ -195,5 +194,4 @@ Version de Ghost usada 5.68
       ```
       - [Log de Chrome](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/blob/develop/pruebase2emultiplesnavegadores/log-chrome.txt)
 
-  - Reporte de resultados:
-    - [Reporte en GitHub](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/tree/develop/pruebase2emultiplesnavegadores)
+  - Reporte de resultados: [Reporte en GitHub](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/tree/develop/pruebase2emultiplesnavegadores)
