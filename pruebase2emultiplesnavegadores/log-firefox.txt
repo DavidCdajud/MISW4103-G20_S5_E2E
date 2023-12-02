@@ -1,0 +1,599 @@
+javierfajardo@iMac-de-javier MISW4103-G20_S5_E2E % npx cypress run --browser firefox --spec "cypress/e2e/v5.68/e11_dashboard_review.cy.js,cypress/e2e/v5.68/e12_page_creation.cy.js,cypress/e2e/v5.68/e13_create_draft.cy.js,cypress/e2e/v5.68/e14_create_tag.cy.js,cypress/e2e/v5.68/e15_theme_verification.cy.js" 
+
+DevTools listening on ws://127.0.0.1:51424/devtools/browser/c06aba33-74e9-46f4-8298-ba3c438b479b
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.4.0                                                                         │
+  │ Browser:        Firefox 120 (headless)                                                         │
+  │ Node Version:   v18.18.1 (/usr/local/bin/node)                                                 │
+  │ Specs:          5 found (e11_dashboard_review.cy.js, e12_page_creation.cy.js, e13_create_draft │
+  │                 .cy.js, e14_create_tag.cy.js, e15_theme_verification.cy.js)                    │
+  │ Searched:       cypress/e2e/v5.68/e11_dashboard_review.cy.js, cypress/e2e/v5.68/e12_page_creat │
+  │                 ion.cy.js, cypress/e2e/v5.68/e13_create_draft.cy.js, cypress/e2e/v5.68/e14_cre │
+  │                 ate_tag.cy.js, cypress/e2e/v5.68/e15_theme_verification.cy.js                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e11_dashboard_review.cy.js                                                      (1 of 5)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 18/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 18/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 19/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 19/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 20/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 20/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 21/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 21/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 22/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 22/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 23/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 23/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 24/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 24/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 25/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 25/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 26/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 26/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 27/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 27/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 28/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 28/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 29/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 29/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 30/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 30/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 31/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 31/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 32/62)
+Still waiting to connect to Firefox, retrying in 1 second (attempt 32/62)
+
+
+  Dashboard General Review in Ghost
+    ✓ debería mostrar todos los elementos del dashboard correctamente (6289ms)
+
+
+  1 passing (8s)
+
+[mochawesome] Report JSON saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_017.json
+
+[mochawesome] Report HTML saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_017.html
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  4                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     8 seconds                                                                        │
+  │ Spec Ran:     e11_dashboard_review.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e11_da     (1280x720)
+     shboard_review.cy.js/v5.68/caso11firefox/1-after-visiting-dashboard.png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e11_da     (1280x720)
+     shboard_review.cy.js/v5.68/caso11firefox/2-total-members.png                                   
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e11_da     (1280x720)
+     shboard_review.cy.js/v5.68/caso11firefox/3-created-manually.png                                
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e11_da     (1280x720)
+     shboard_review.cy.js/v5.68/caso11firefox/4-list-footer.png                                     
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e12_page_creation.cy.js                                                         (2 of 5)
+
+
+  Page Creation and Publishing in Ghost
+    ✓ debería crear una página y verificar su vista previa (10199ms)
+    ✓ debería contar las palabras aleatoriamente en la descripción al crear una Page (10875ms)
+    ✓ debería crear una página y luego cancelar, verificando que la página no se crea (11912ms)
+    ✓ debería crear una page con un título y descripción aleatorios (12855ms)
+    ✓ debería crear una nueva page solo con título aleatorio sin descripción (6273ms)
+    ✓ debería permitir la creación de una nueva Page sin título pero con descripción (7628ms)
+    ✓ debería fallar al crear una page sin título
+    ✓ debería fallar al crear una nueva Page con un título extremadamente largo (44297ms)
+    ✓ debería fallar al crear una nueva page con una descripción extremadamente larga (1034693ms)
+    ✓ debería crear una nueva page con título y descripción usando solo caracteres especiales (6663ms)
+
+
+  10 passing (19m)
+
+[mochawesome] Report JSON saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_018.json
+
+[mochawesome] Report HTML saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_018.html
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        10                                                                               │
+  │ Passing:      10                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  58                                                                               │
+  │ Video:        false                                                                            │
+  │ Duration:     19 minutes, 12 seconds                                                           │
+  │ Spec Ran:     e12_page_creation.cy.js                                                          │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/401-after-navigating-to-pages.png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/402-after-clicking-new-page.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/403-after-typing-page-details.png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/404-after-clicking-preview-button.png                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/405-after-verifying-preview.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/101-after-navigating-to-pages.png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/102-after-clicking-new-page.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/103-after-typing-title.png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/104-after-typing-description.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/105-after-verifying-word-count.png                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/71-after-navigating-to-pages.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/72-after-clicking-new-page.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/73-after-typing-title.png                                
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/74-after-typing-description.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/75-after-clicking-cancel.png                             
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/76-after-verifying-page-not-created.png                  
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/03-after-navigating-to-pages.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/04-after-clicking-new-page.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/05-after-typing-title.png                                
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/06-after-typing-description.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/07-after-clicking-publish.png                            
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/08-after-publish-success-visible.png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/09-after-clicking-continue.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/10-after-confirming-publish.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/03-after-navigating-to-pages (1).png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/04-after-clicking-new-page (1).png                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/05-after-typing-title (1).png                            
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/07-after-clicking-publish (1).png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/08-after-publish-success-visible (1).png                 
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/09-after-clicking-continue (1).png                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/10-after-confirming-publish (1).png                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/03-after-navigating-to-pages (2).png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/04-after-clicking-new-page (2).png                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/05-after-typing-description.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/06-after-clicking-publish.png                            
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/07-after-clicking-continue.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/08-after-confirming-publish.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/09-after-publish-success-visible.png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/10-after-navigating-to-pages.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/11-after-clicking-new-page.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/12-after-attempting-publish-without-title.               
+     png                                                                                            
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/13-after-confirming-no-navigation-on-error               
+     .png                                                                                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/14-after-navigating-to-pages.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/15-after-clicking-new-page.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/16-after-typing-extremely-long-title.png                 
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/17-after-attempting-publish-with-extremely               
+     -long-title.png                                                                                
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/14-after-navigating-to-pages (1).png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/15-after-clicking-new-page (1).png                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/16-after-typing-extremely-long-description               
+     .png                                                                                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/17-after-attempting-publish-with-extremely               
+     -long-description.png                                                                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/34-after-navigating-to-pages.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/35-after-clicking-new-page.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/36-after-typing-special-characters-title.p               
+     ng                                                                                             
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/37-after-typing-special-characters-descrip               
+     tion.png                                                                                       
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/38-after-clicking-publish.png                            
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/39-after-publish-success-visible.png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/40-after-clicking-continue.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e12_pa     (1280x720)
+     ge_creation.cy.js/v5.68/caso12firefox/41-after-confirming-publish.png                          
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e13_create_draft.cy.js                                                          (3 of 5)
+
+
+  Create a draft in Ghost
+    ✓ debería crear y luego editar un borrador (28075ms)
+    ✓ debería crear un draft post con título y descripción aleatorios (18503ms)
+    ✓ debería crear un draft post sin descripción (5264ms)
+    ✓ debería mostrar un error cuando el título del post es más largo de 255 caracteres (6848ms)
+    ✓ debería verificar que el botón de publicar no esté presente cuando son solo caracteres especiales
+    ✓ debería crear un draft post con título y descripción validando la cantidad de palabras. (24337ms)
+    ✓ debería crear un draft post con un título aleatorio y contenido con caracteres especiales
+    ✓ debería crear un post sin título pero con contenido aleatorio (11839ms)
+
+
+  8 passing (2m)
+
+[mochawesome] Report JSON saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_019.json
+
+[mochawesome] Report HTML saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_019.html
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        8                                                                                │
+  │ Passing:      8                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  26                                                                               │
+  │ Video:        false                                                                            │
+  │ Duration:     1 minute, 45 seconds                                                             │
+  │ Spec Ran:     e13_create_draft.cy.js                                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/1-after-editing-draft.png                                 
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/1-after-navigating-to-post-creation.png                   
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/2-after-typing-title.png                                  
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/3-after-typing-content.png                                
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/4-after-clicking-publish.png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/5-after-publish-success.png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/1.png                                                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/2.png                                                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/4.png                                                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/5.png                                                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/1-after-navigating-to-post-creation (1).png               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/2-after-typing-title (1).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/3-after-publish-button-should-not-exist.png               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/1-after-navigating-to-post-creation (2).png               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/2-after-typing-title (2).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/3-after-typing-content (1).png                            
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/4-after-verifying-word-count.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/1-after-navigating-to-post-creation (3).png               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/2-after-typing-title (3).png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/3-after-typing-special-characters.png                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/4-after-clicking-save-draft.png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/5-after-draft-save-success.png                            
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/1-after-navigating-to-post-creation (4).png               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/2-after-typing-content.png                                
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/3-after-clicking-publish.png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e13_cr     (1280x720)
+     eate_draft.cy.js/v5.68/caso13firefox/4-after-publish-success.png                               
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e14_create_tag.cy.js                                                            (4 of 5)
+
+
+  Create a tag in Ghost Admin
+    ✓ debería cambiar el color de un tag de manera aleatoria y verificar el cambio
+    ✓ debería actualizar el nombre de un tag existente
+    ✓ debería eliminar un tag existente (5733ms)
+    ✓ debería crear un nuevo tag con nombre y descripción aleatorios (5726ms)
+    ✓ debería crear un nuevo tag con un nombre aleatorio
+    ✓ no debería permitir la creación de un nuevo tag sin nombre
+    ✓ no debería permitir la creación de un nuevo tag con un nombre excesivamente largo (7462ms)
+    ✓ no debería permitir la creación de un nuevo tag con un nombre válido y una descripción excesivamente larga (13959ms)
+    ✓ debería crear un nuevo tag y subir una imagen de Unsplash (6665ms)
+    ✓ debería crear un nuevo internal tag (5404ms)
+    ✓ debería mostrar un mensaje de error al intentar crear un internal tag vacío con descripcion.
+    ✓ debería crear un nuevo internal tag con un nombre aleatorio excesivamente largo (8416ms)
+    ✓ debería crear un nuevo internal tag con un nombre aleatorio y una descripción aleatoria excesivamente larga (13395ms)
+
+
+  13 passing (2m)
+
+[mochawesome] Report JSON saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_020.json
+
+[mochawesome] Report HTML saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_020.html
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        13                                                                               │
+  │ Passing:      13                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  63                                                                               │
+  │ Video:        false                                                                            │
+  │ Duration:     1 minute, 33 seconds                                                             │
+  │ Spec Ran:     e14_create_tag.cy.js                                                             │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/1-pagina-inicial-tags.png                                   
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/3-despues-de-cambiar-color.png                              
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/4-despues-de-guardar-cambios.png                            
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/1-after-updating-tag.png                                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/1-after-creating-tag.png                                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/2-after-deleting-tag.png                                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/3-after-verification-of-deletion.png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/1-after-visiting-tags.png                                   
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/2-before-creating-tag.png                                   
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/3-after-entering-tag-info.png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/4-after-saving-tag.png                                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/5-after-tag-created.png                                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/1-after-visiting-tags (1).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/2-before-creating-tag (1).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/3-after-entering-tag-name.png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/4-after-saving-tag (1).png                                  
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/5-after-tag-created (1).png                                 
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/1-after-visiting-tags (2).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/2-before-creating-tag (2).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/3-after-entering-tag-description.png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/4-after-attempting-to-save-tag.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/5-after-error-message.png                                   
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/1-after-visiting-tags (3).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/2-before-creating-tag (3).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/3-after-entering-long-tag-name.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/4-after-attempting-to-save-tag (1).png                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/5-after-error-message (1).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/1-after-visiting-tags (4).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/2-before-creating-tag (4).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/3-after-entering-tag-name (1).png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/4-after-entering-long-tag-description.png                   
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/5-after-attempting-to-save-tag.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/6-after-error-message.png                                   
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/1-after-visiting-tags (5).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/2-before-creating-tag (5).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/3-after-entering-tag-name (2).png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/4-after-clicking-image-upload-button.png                    
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/5-after-selecting-image.png                                 
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/6-after-inserting-image.png                                 
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/7-after-saving-tag.png                                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/8-after-tag-created.png                                     
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/1-after-visiting-tags (6).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/2-after-clicking-internal-tags.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/3-before-creating-new-tag.png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/4-after-entering-internal-tag-info.png                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/5-after-saving-internal-tag.png                             
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/6-after-internal-tag-created.png                            
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/1-after-visiting-tags (7).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/2-after-clicking-internal-tags (1).png                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/3-before-creating-new-internal-tag.png                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/4-after-attempting-to-save-empty-internal-tag               
+     .png                                                                                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/5-after-error-message (2).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/1-after-visiting-tags (8).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/2-after-clicking-internal-tags (2).png                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/3-before-creating-new-tag (1).png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/4-after-entering-internal-tag-info (1).png                  
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/5-after-saving-internal-tag (1).png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/6-after-internal-tag-created (1).png                        
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/1-after-visiting-tags (9).png                               
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/2-after-clicking-internal-tags (3).png                      
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/3-before-creating-new-tag (2).png                           
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/4-after-entering-internal-tag-info (2).png                  
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e14_cr     (1280x720)
+     eate_tag.cy.js/v5.68/caso14firefox/5-after-attempt-to-save-internal-tag.png                    
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  e15_theme_verification.cy.js                                                    (5 of 5)
+
+
+  Theme toggle in Ghost Admin
+    ✓ debería cambiar entre light y dark themes (5064ms)
+    ✓ no debería mostrar resultados para un término de búsqueda poco probable con un carácter adicional
+    ✓ debería mostrar resultados para una de búsqueda válido
+
+
+  3 passing (15s)
+
+[mochawesome] Report JSON saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_021.json
+
+[mochawesome] Report HTML saved to /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/reports/firefox/e11_dashboard_review/mochawesome_021.html
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        3                                                                                │
+  │ Passing:      3                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  7                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     15 seconds                                                                       │
+  │ Spec Ran:     e15_theme_verification.cy.js                                                     │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/caso15firefox/1-dashboard-initial.png                             
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/caso15firefox/2-dashboard-dark-theme.png                          
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/caso15firefox/3-dashboard-light-theme.png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/caso15firefox/1-dashboard-initial (1).png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/caso15firefox/11-search-no-results.png                            
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/caso15firefox/1-dashboard-initial (2).png                         
+  -  /Users/javierfajardo/Desktop/pppp/MISW4103-G20_S5_E2E/cypress/screenshots/e15_th     (1280x720)
+     eme_verification.cy.js/v5.68/caso15firefox/search-results-for-valid-term.png                   
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  e11_dashboard_review.cy.js               00:08        1        1        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  e12_page_creation.cy.js                  19:12       10       10        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  e13_create_draft.cy.js                   01:45        8        8        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  e14_create_tag.cy.js                     01:33       13       13        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  e15_theme_verification.cy.js             00:15        3        3        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        22:56       35       35        -        -        -  
+
+javierfajardo@iMac-de-javier MISW4103-G20_S5_E2E % 
