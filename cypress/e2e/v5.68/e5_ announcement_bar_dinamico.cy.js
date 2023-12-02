@@ -2,6 +2,9 @@ const dataMocka = require('../../fixtures/e16_e20-data.json');
 
 let varWord = new String();
 
+function getRandomArbitrary(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 varWord = dataMocka[getRandomArbitrary(1, 10)].dimTitle;
 
 describe('Gestionar code injection', function() {
