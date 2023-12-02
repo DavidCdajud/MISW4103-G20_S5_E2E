@@ -3,6 +3,10 @@ const dataMocka = require('../../fixtures/e16_e20-data.json');
 let varTitle = new String();
 let varDescription = new String();
 
+function getRandomArbitrary(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 varTitle = dataMocka[getRandomArbitrary(1, 10)].dimTitle;
 varDescription = dataMocka[getRandomArbitrary(1, 50)].dimDescription;
 
