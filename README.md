@@ -1,5 +1,5 @@
 # MISW4103-G20_S7_E2E_CYPRESS
-
+## Entrega Semana 6
 ### Video presentación
 
 [Video](https://uniandes-my.sharepoint.com/:v:/g/personal/d_caycedod_uniandes_edu_co/Edzy5jMAR9ZIqr0SfEPWh78BXHstLFql8uRMxQnqfk3N3A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&e=kIdga1)
@@ -125,25 +125,31 @@ https://github.com/jhosalarcon/MISW4103-G20_S5_Kraken_E2E
 
 # Entrega Semana 7
 
+Version de Ghost usada 5.68
+
 ## Enlaces Importantes
 
 - **Estrategia de generación de Datos junto documentacion de los scripts**:  
-  [Visitar](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki/07.-Generaci%C3%B3n-de-datos)
+  [https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki/07.-Generaci%C3%B3n-de-datos](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki/07.-Generaci%C3%B3n-de-datos)
 
-- **Definiciòn Escenarios de Prueba**:  
-  [Visitar](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki/08.-Escenarios)
+- **Definición Escenarios de Prueba**:  
+  [https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki/08.-Escenarios](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki/08.-Escenarios)
 
 - **Información General de la Wikipedia**:  
-  [Visitar](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki)
+  [https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki)
 
-- **Scripts Ejecutados (v5.68)**:  
-  [Visitar](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/tree/main/cypress/e2e/v5.68)
+- **Scripts de pruebas elaborados (v5.68)**:  
+  [https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/tree/main/cypress/e2e/v5.68](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/tree/main/cypress/e2e/v5.68)
 
 ## Detalles de Acceso
 
 - **Email**: `pruebas@correo.com`
-- **Contraseña**: `Test654321`
+- **Contraseña**: `abcde12345`
 
+## Ejecución de pruebas 
+
+- cypress open
+- Seleccionar las pruebas a ejecutar
 
 
 
