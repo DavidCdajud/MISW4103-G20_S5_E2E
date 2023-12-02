@@ -151,5 +151,12 @@ Version de Ghost usada 5.68
 - cypress open
 - Seleccionar las pruebas a ejecutar
 
+# Entrega Semana 8
+
+- **Estrategia de pruebas**
+  https://uniandes-my.sharepoint.com/:w:/g/personal/jd_fajardor1_uniandes_edu_co/EeP0mywNIABGi_wpKPyN6E8B2Qy8df7xuQqvsmbZKQeKOQ?e=SCeiHJ
+
+- **Inventario de pruebas manuales**
+  https://uniandes-my.sharepoint.com/:x:/g/personal/jd_fajardor1_uniandes_edu_co/EbSDXLU2UqFEpTOVu-zj6-kBGHIgt2bjgXI0nh99sjnN7Q?e=K4xQyk
 
 
