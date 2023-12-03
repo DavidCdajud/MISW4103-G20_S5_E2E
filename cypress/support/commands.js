@@ -40,3 +40,15 @@ Cypress.Commands.add('conditionalScreenshot', (filename) => {
         cy.screenshot(filename);
     }
 });
+
+Cypress.Commands.add('performActionAndScreenshot', (actionFunction, screenshotName) => {
+    actionFunction();
+    cy.conditionalScreenshot(screenshotName);
+});
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+    if (err.message.includes('TransitionAborted')) {
+        return false;
+    }
+    return true;
+});
