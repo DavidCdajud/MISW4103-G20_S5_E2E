@@ -34,3 +34,9 @@ Cypress.Commands.add('loginToGhost', (baseUrl) => {
     cy.get('button[type="submit"]').click();
 });
 
+Cypress.Commands.add('conditionalScreenshot', (filename) => {
+    let shouldTakeScreenshot = Cypress.config('printImage') === 'true';
+    if (shouldTakeScreenshot) {
+        cy.screenshot(filename);
+    }
+});
