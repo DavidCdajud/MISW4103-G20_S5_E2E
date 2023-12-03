@@ -155,7 +155,7 @@ Version de Ghost usada 5.68
 # Entrega Semana 8
 
 - **Video entrega grupal semana 8**
-[Enlace](https://uniandes-my.sharepoint.com/personal/d_caycedod_uniandes_edu_co/_layouts/15/stream.aspx?id=%2Fpersonal%2Fd%5Fcaycedod%5Funiandes%5Fedu%5Fco%2FDocuments%2FGrabaciones%2FLlamada%20con%204103%2DPruebas%2DAutomatizadas%2D20231202%5F204823%2DGrabaci%C3%B3n%20de%20la%20reuni%C3%B3n%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview&isSPOFile=1&OR=Teams-HL&CT=1701570275434&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIxNDE1LzIzMDkyOTExMjA4IiwiSGFzRmVkZXJhdGVkVXNlciI6ZmFsc2V9)
+[Enlace]([https://uniandes-my.sharepoint.com/personal/d_caycedod_uniandes_edu_co/_layouts/15/stream.aspx?id=%2Fpersonal%2Fd%5Fcaycedod%5Funiandes%5Fedu%5Fco%2FDocuments%2FGrabaciones%2FLlamada%20con%204103%2DPruebas%2DAutomatizadas%2D20231202%5F204823%2DGrabaci%C3%B3n%20de%20la%20reuni%C3%B3n%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview&isSPOFile=1&OR=Teams-HL&CT=1701570275434&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIxNDE1LzIzMDkyOTExMjA4IiwiSGFzRmVkZXJhdGVkVXNlciI6ZmFsc2V9](https://uniandes-my.sharepoint.com/:v:/g/personal/e_olierq_uniandes_edu_co/EQkHE-7iK2dBk0yEtAqRVlUBMBAvbhXNLRN5sWvLqDYp7Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1FbWFpbCIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=TjKpf7))
 
 - **Documento entrega grupal semana 8**
 
