@@ -154,9 +154,12 @@ Version de Ghost usada 5.68
 
 # Entrega Semana 8
 
+- **Video entrega grupal semana 8**
+[Enlace](https://uniandes-my.sharepoint.com/personal/d_caycedod_uniandes_edu_co/_layouts/15/stream.aspx?id=%2Fpersonal%2Fd%5Fcaycedod%5Funiandes%5Fedu%5Fco%2FDocuments%2FGrabaciones%2FLlamada%20con%204103%2DPruebas%2DAutomatizadas%2D20231202%5F204823%2DGrabaci%C3%B3n%20de%20la%20reuni%C3%B3n%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview&isSPOFile=1&OR=Teams-HL&CT=1701570275434&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIxNDE1LzIzMDkyOTExMjA4IiwiSGFzRmVkZXJhdGVkVXNlciI6ZmFsc2V9)
+
 - **Documento entrega grupal semana 8**
 
--  [Enlace](https://uniandes-my.sharepoint.com/personal/jd_fajardor1_uniandes_edu_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjd%5Ffajardor1%5Funiandes%5Fedu%5Fco%2FDocuments%2Fpruebas%2Dautomatizadas%2FEntregaSemana8%2Epdf&parent=%2Fpersonal%2Fjd%5Ffajardor1%5Funiandes%5Fedu%5Fco%2FDocuments%2Fpruebas%2Dautomatizadas&ct=1701566630132&or=Teams%2DHL&ga=1&LOF=1)
+-  [Enlace]([https://uniandes-my.sharepoint.com/personal/jd_fajardor1_uniandes_edu_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjd%5Ffajardor1%5Funiandes%5Fedu%5Fco%2FDocuments%2Fpruebas%2Dautomatizadas%2FEntregaSemana8%2Epdf&parent=%2Fpersonal%2Fjd%5Ffajardor1%5Funiandes%5Fedu%5Fco%2FDocuments%2Fpruebas%2Dautomatizadas&ct=1701566630132&or=Teams%2DHL&ga=1&LOF=1](https://uniandes-my.sharepoint.com/:b:/g/personal/jd_fajardor1_uniandes_edu_co/ESuSL2-V_q1Mmpnp4C_Q4H0Ban_S_ccy0I8rNR__TP03-Q?e=W4r3X9))
 
 - **Incidencias Reportadas**
 
