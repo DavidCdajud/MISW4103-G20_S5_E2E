@@ -159,7 +159,7 @@ Version de Ghost usada 5.68
 
 - **Documento entrega grupal semana 8**
 
--  [Enlace]([https://uniandes-my.sharepoint.com/personal/jd_fajardor1_uniandes_edu_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjd%5Ffajardor1%5Funiandes%5Fedu%5Fco%2FDocuments%2Fpruebas%2Dautomatizadas%2FEntregaSemana8%2Epdf&parent=%2Fpersonal%2Fjd%5Ffajardor1%5Funiandes%5Fedu%5Fco%2FDocuments%2Fpruebas%2Dautomatizadas&ct=1701566630132&or=Teams%2DHL&ga=1&LOF=1](https://uniandes-my.sharepoint.com/:b:/g/personal/jd_fajardor1_uniandes_edu_co/ESuSL2-V_q1Mmpnp4C_Q4H0Ban_S_ccy0I8rNR__TP03-Q?e=W4r3X9))
+-  https://uniandes-my.sharepoint.com/:v:/g/personal/e_olierq_uniandes_edu_co/EQkHE-7iK2dBk0yEtAqRVlUBMBAvbhXNLRN5sWvLqDYp7Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1FbWFpbCIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=TjKpf7
 
 - **Incidencias Reportadas**
 
