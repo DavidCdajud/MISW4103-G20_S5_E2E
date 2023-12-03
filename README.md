@@ -131,6 +131,7 @@ Version de Ghost usada 5.68
 
 - **Estrategia de generación de Datos junto documentacion de los scripts**:  
   [https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki/07.-Generaci%C3%B3n-de-datos](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki/07.-Generaci%C3%B3n-de-datos)
+ - documento de  https://uniandes-my.sharepoint.com/personal/jd_fajardor1_uniandes_edu_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjd%5Ffajardor1%5Funiandes%5Fedu%5Fco%2FDocuments%2Fpruebas%2Dautomatizadas%2FEntregaSemana8%2Epdf&parent=%2Fpersonal%2Fjd%5Ffajardor1%5Funiandes%5Fedu%5Fco%2FDocuments%2Fpruebas%2Dautomatizadas&ct=1701566630132&or=Teams%2DHL&ga=1&LOF=1
 
 - **Definición Escenarios de Prueba**:  
   [https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki/08.-Escenarios](https://github.com/DavidCdajud/MISW4103-G20_S5_E2E/wiki/08.-Escenarios)
@@ -152,6 +153,10 @@ Version de Ghost usada 5.68
 - Seleccionar las pruebas a ejecutar
 
 # Entrega Semana 8
+
+- **Documento entrega grupal semana 8**
+
+-  [Enlace](https://uniandes-my.sharepoint.com/personal/jd_fajardor1_uniandes_edu_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjd%5Ffajardor1%5Funiandes%5Fedu%5Fco%2FDocuments%2Fpruebas%2Dautomatizadas%2FEntregaSemana8%2Epdf&parent=%2Fpersonal%2Fjd%5Ffajardor1%5Funiandes%5Fedu%5Fco%2FDocuments%2Fpruebas%2Dautomatizadas&ct=1701566630132&or=Teams%2DHL&ga=1&LOF=1)
 
 - **Incidencias Reportadas**
 
